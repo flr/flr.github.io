@@ -1,0 +1,104 @@
+Package: FLa4a
+Version: 0.83.0
+Depends: R (>= 3.0.0), stats, Matrix, copula, triangle, mgcv, lattice,
+        latticeExtra, splines, np, RColorBrewer, methods, FLCore (>=
+        2.5.20140402)
+License: file LICENSE
+MD5sum: 07683cc6bd46e2d9fc17f564022ba6df
+NeedsCompilation: no
+
+Package: FLash
+Version: 2.5.0
+Depends: R(>= 2.15.0), FLCore(>= 2.5), methods
+License: GPL-2
+MD5sum: 38a0be4541aace0a525f996c6572abee
+NeedsCompilation: yes
+
+Package: FLAssess
+Version: 2.5.20130716
+Depends: FLCore(>= 2.5.0), FLash(>= 2.5.0)
+LinkingTo: FLash
+License: GPL-2
+MD5sum: 5a73bc0eac2f9c73013af62db1d12269
+NeedsCompilation: yes
+
+Package: FLBRP
+Version: 2.5.20131209
+Depends: methods, FLCore(>= 2.3), FLash, ggplotFL, plyr
+LinkingTo: FLash
+License: GPL-2
+MD5sum: d6937450dc8bfc5d4ae6dbb6f2c2781c
+NeedsCompilation: yes
+
+Package: FLCore
+Version: 2.5.20140402
+Depends: methods, R(>= 3.0), grid, lattice, MASS
+Imports: stats, graphics
+License: GPL (>= 2)
+MD5sum: 725a521145cb3e426b471d4bb68b0326
+NeedsCompilation: no
+
+Package: FLFishery
+Version: 0.1.20140121
+Depends: R(>= 3.0.0), methods, FLCore
+Suggests: knitr
+License: GPL-2
+MD5sum: 86ffa1164ae0df2fb8bd0524c5a844c3
+NeedsCompilation: no
+
+Package: FLFleet
+Version: 2.5.20130719
+Depends: methods, FLCore, R(>= 2.15.1),
+Imports: FLCore
+License: GPL-2
+MD5sum: bf858e9c3e6db62f975e82e7d4839964
+NeedsCompilation: no
+
+Package: FLRcppAdolc
+Version: 1.0
+Depends: Rcpp (>= 0.10.3)
+Imports: FLCore
+LinkingTo: Rcpp
+License: GPL (>= 2)
+MD5sum: 6d34c295cd572ef21341f72237019d16
+NeedsCompilation: yes
+
+Package: FLRDynState
+Version: 2.5
+Depends: FLCore(>= 2.4), methods
+License: GPL-2
+MD5sum: 7268832b79c8d1159e81cc5929735ab1
+NeedsCompilation: yes
+
+Package: FLSAM
+Version: 0.99.991
+Depends: R(>= 2.13.0), FLCore(>= 2.4), utils, MASS
+Suggests: methods, reshape, plyr, ellipse
+License: GPL
+MD5sum: 097d7bce4bff7aab6cf7a5079dd5afa6
+NeedsCompilation: no
+
+Package: FLXSA
+Version: 2.5.20130710
+Depends: methods, FLCore(>= 2.5), FLAssess(>= 2.5), FLash(>= 2.5)
+License: GPL-2
+MD5sum: e59cd306b02476c8c7e54c7e9234aec9
+NeedsCompilation: yes
+
+Package: ggplotFL
+Version: 2.5.20140210
+Depends: R(>= 3.0.0), ggplot2, FLCore, gridExtra, reshape2
+Imports: plyr
+Suggests: knitr
+License: GPL-2
+MD5sum: aaa7620df4fb205fbec62af3bed36e75
+NeedsCompilation: no
+
+Package: SQLiteFL
+Version: 0.2
+Depends: methods, FLCore
+Imports: FLCore
+License: GPL-2
+MD5sum: 56fbecc3f6252a57ea1ce8685a088d46
+NeedsCompilation: yes
+
