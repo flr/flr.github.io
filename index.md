@@ -14,3 +14,7 @@ or you can install the development version of each package directly from gihub
 	library(devtools)
 	install_github('FLCore', 'flr')
 
+{% highlight r %}
+library(devtools)
+install_github('FLCore', 'flr')
+{% endhighlight %}
