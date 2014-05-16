@@ -33,13 +33,14 @@
         </ul>
       </div>
       <div class="col">
-        <h3>Initial setup</h3>
-        <p>Download the files from the Github repository and put them in a folder. Make sure Jekyll, Susy, Compass and Sass are installed through <a href="http://rubygems.org/">RubyGems</a>:</p>
-        {% highlight bash %}
-sudo gem install jekyll
-sudo gem install susy
-sudo gem install sass
-sudo gem install compass{% endhighlight %}
+        <h3>Quick install</h3>
+				<p>
+				You can install the latest version of FLR packages from our repository,
+				</p>
+
+        {% highlight r %}
+				install.packages(repos="http://flr-project.org/R")
+				{% endhighlight %}
 
         <h3>How to use</h3>
         <p>Run two terminal windows, one to compile the site and one to compile the CSS. If you're just blogging you only need the jekyll command:</p>
