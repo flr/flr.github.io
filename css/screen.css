@@ -685,11 +685,11 @@ pre+pre {border-bottom-radius: 4px}
  
 .help-text {color: #999;font-size:11px}
  
-#header {background: #485934}
+#header {background: #547980}
  
 	#header a {transition-property: background, box-shadow;transition-duration:0.18s}
  
-	#header #social {float: right;color:#95af77}
+	#header #social {float: right;color:#594F4F}
  
 @media all and (max-width: 768px) {#header #social span}
  
