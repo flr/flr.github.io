@@ -3,7 +3,7 @@ layout: tutorial
 title: A Quick Introduction to FLR
 ---
 
-## SETTING FLR UP
+# 1. INSTALL FLR PACKAGES
 
 
 ```r
