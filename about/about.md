@@ -1,7 +1,8 @@
 ---
-layout: post
+layout: page
 title: About FLR
 ---
+
 # About FLR
 
 # Mission Statement
