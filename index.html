@@ -23,13 +23,6 @@
           <li>Made for static blogging with Jekyll</li>
           <li>Easy theming with SCSS. Change a few variables and you've got your look</li>
           <li>Using the wonderful open source font <a href="http://sourceforge.net/projects/sourcesans.adobe/">Source Sans Pro</a></li>
-          <li>Modern CSS using subtle transitions</li>
-          <li>Lightweight code (the CSS file is 18kb)</li>
-          <li>Responsive design with fluid grid and video</li>
-          <li>Code highlighting and image alignment classes for better looking blog posts</li>
-          <li>Drop in a Disqus code and you have comments</li>
-          <li>Photo banner on homepage, ready to customize</li>
-          <li>Built-in RSS feed</li>
         </ul>
       </div>
       <div class="col">
@@ -42,11 +35,21 @@
 				install.packages(repos="http://flr-project.org/R")
 				{% endhighlight %}
 
+				<p>
+				or the development version of each package directly from github
+				</p>
+
+        {% highlight r %}
+				library(devtools)
+				install_github('FLCore', 'flr')
+				{% endhighlight %}
+
         <h3>How to use</h3>
         <p>Run two terminal windows, one to compile the site and one to compile the CSS. If you're just blogging you only need the jekyll command:</p>
         {% highlight bash %}
 jekyll serve -w
 compass watch{% endhighlight %}
+
         <h3>License</h3>
         <p>The Cactus Jekyll theme is licensed under the <a href="http://opensource.org/licenses/MIT">MIT</a> license i.e. do whatever you want with it. Keeping the backlink and spreading the word would be nice.</p>
       </div>
