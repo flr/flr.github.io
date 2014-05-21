@@ -7,9 +7,21 @@ title: FLR Packages
 
 - http://flr.github.io/FLCore/
 
-## ggplotFL
+# ggplotFL
 
 - DESCRIPTION
+- Author:
+- Maintainer:
+
+To install this package, start R and enter:
+
+	install.packages("ggplotFL", repos="http://flr-project.org/R")
+
+To cite this package in a publication type:
+
+  citation("ggplotFL")
+
+
 
 - Current version:
 
