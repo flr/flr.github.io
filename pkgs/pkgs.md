@@ -9,8 +9,12 @@ title: FLR Packages
 
 ## ggplotFL
 
-- http://flr.github.io/ggplotFL
+- DESCRIPTION
 
-- http://github.com/flr/ggplotFL
+- Current version:
 
-[![Build Status](https://travis-ci.org/flr/ggplotFL.svg?branch=master)](https://travis-ci.org/flr/ggplotFL)
+- Documentation: http://flr.github.io/ggplotFL
+
+- Repository: (http://github.com/flr/ggplotFL
+
+- Build status: [![Build Status](https://travis-ci.org/flr/ggplotFL.svg?branch=master)](https://travis-ci.org/flr/ggplotFL)
