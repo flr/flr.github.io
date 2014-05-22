@@ -13,7 +13,7 @@
     <div id="blog-single">
       <article>
         <header>
-          <p>Posted on {{ page.date | date: "%B %d, %Y" }} by Author</p>
+          <p>Posted on {{ page.date | date: "%B %d, %Y" }} by {{ page.post_author }} </p>
         </header>
         <div class="entry-content">
           {{ content }}
