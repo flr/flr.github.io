@@ -11,9 +11,11 @@ title: FLR Packages
 
 - [![Build Status](https://travis-ci.org/flr/FLCore.svg?branch=master)](https://travis-ci.org/flr/FLCore)
 
+- Build status: [![Build Status](https://travis-ci.org/flr/FLCore.svg?branch=master)](https://travis-ci.org/flr/ggplotFL)
 
-| **Repository** | http://flr.github.io/FLCore/ |
-| **Build Status** | https://travis-ci.org/flr/FLCore |
+
+| **Repository** | <http://flr.github.io/FLCore/> |
+| **Build Status** | [![Build Status](https://travis-ci.org/flr/FLCore.svg?branch=master)](https://travis-ci.org/flr/ggplotFL) |
 
 # ggplotFL
 
