@@ -1,3 +1,5 @@
 markdown: kramdown
 comments:
   provider: false
+gems:
+  - jekyll-sitemap
