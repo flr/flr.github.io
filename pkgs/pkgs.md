@@ -3,9 +3,17 @@ layout: page
 title: FLR Packages
 ---
 
-## FLCore
+# FLCore
 
 - http://flr.github.io/FLCore/
+
+- Latest release: <https://github.com/flr/FLCore/releases/latest>
+
+- [![Build Status](https://travis-ci.org/flr/FLCore.svg?branch=master)](https://travis-ci.org/flr/FLCore)
+
+
+| **Repository** | http://flr.github.io/FLCore/ |
+| **Build Status** | https://travis-ci.org/flr/FLCore |
 
 # ggplotFL
 
