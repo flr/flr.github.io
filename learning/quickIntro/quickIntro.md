@@ -3,17 +3,21 @@ layout: tutorial
 title: A Quick Introduction to FLR
 ---
 
-Welcome to FLR. This is going to be a short run through some of the basic elements of the main FLR packages. For further learning material, please visit the learning page or the sites for [each individual package]({{ site.baseurl }}pkgs/pkgs.html).
+Welcome to FLR. This is going to be a short run through some of the basic elements of the main FLR packages. For further learning material, please visit the [learning page]({{ site.baseurl }}learning/learning.html) or the sites for [each individual package]({{ site.baseurl }}pkgs/pkgs.html).
 
 
 
 
 # Installing the FLR packages
 
+We start by installing the most recent version of the FLR packages. Most FLR packages are currently not available in [CRAN](http://cran.r-project.org), but are distribiuted through the FLR Project package repository. To install the first of the packages, *FLCore*, please type:
+
 
 {% highlight r %}
 # install.packages(c('FLCore'), repos='http://flr-project.org/R')
 {% endhighlight %}
+
+
 
 # FLCore
 
