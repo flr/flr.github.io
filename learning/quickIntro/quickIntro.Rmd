@@ -21,12 +21,12 @@ opts_chunk$set(dev='png', cache=TRUE, fig.width=4.5, fig.height=4.5, tidy=TRUE, 
 # FLCore
 
 
-```{r}
+```{r, results='hide'}
 library(FLCore)
 library(ggplotFL)
+data(ple4)
 ```
 
-```{r}
-data(ple4)
+```{r, results='hide'}
 plot(ple4)
 ```
