@@ -3,6 +3,8 @@ layout: tutorial
 title: A Quick Introduction to FLR
 ---
 
+Welcome to FLR. This is going to be a short run through some of the basic elements of the main FLR packages. For further learning material, please visit the learning page or the sites for [each individual package]({{ site.baseurl }}{{pkgs/pkgs.html}}).
+
 ```{r, ini, echo=FALSE, results='hide', message=FALSE}
 render_jekyll()
 opts_chunk$set(dev='png', cache=FALSE, fig.width=6, fig.height=6, tidy=TRUE, results='markup')

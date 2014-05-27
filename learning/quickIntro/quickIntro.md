@@ -3,6 +3,8 @@ layout: tutorial
 title: A Quick Introduction to FLR
 ---
 
+Welcome to FLR. This is going to be a short run through some of the basic elements of the main FLR packages. For further learning material, please visit the learning page or the sites for [each individual package]({{ site.baseurl }}{{pkgs/pkgs.html}}).
+
 
 
 
@@ -18,48 +20,7 @@ title: A Quick Introduction to FLR
 
 {% highlight r %}
 library(FLCore)
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Loading required package: grid
-## Loading required package: lattice
-## Loading required package: MASS
-## FLCore 2.5.0 development version
-## 
-## 
-## Attaching package: 'FLCore'
-## 
-## The following objects are masked from 'package:base':
-## 
-##     cbind, rbind
-{% endhighlight %}
-
-
-
-{% highlight r %}
 library(ggplotFL)
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Loading required package: ggplot2
-## 
-## Attaching package: 'ggplot2'
-## 
-## The following object is masked from 'package:FLCore':
-## 
-##     %+%
-## 
-## Loading required package: gridExtra
-## Loading required package: reshape2
-{% endhighlight %}
-
-
-
-{% highlight r %}
 data(ple4)
 {% endhighlight %}
 
