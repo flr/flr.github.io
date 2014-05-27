@@ -5,7 +5,7 @@ title: A Quick Introduction to FLR
 
 ```{r, ini, echo=FALSE, results='hide', message=FALSE}
 library(knitr)
-opts_chunk$set(dev='png', cache=TRUE, fig.width=4.5, fig.height=4.5, tidy=TRUE, results='markup')
+opts_chunk$set(dev='png', cache=TRUE, fig.width=6, fig.height=6, tidy=TRUE, results='markup')
 ```
 
 # Installing the FLR packages
