@@ -4,22 +4,17 @@ title: A Quick Introduction to FLR
 ---
 
 ```{r, ini, echo=FALSE, results='hide', message=FALSE}
-library(knitr)
-opts_chunk$set(dev='png', cache=TRUE, fig.width=6, fig.height=6, tidy=TRUE, results='markup')
+render_jekyll()
+opts_chunk$set(dev='png', cache=FALSE, fig.width=6, fig.height=6, tidy=TRUE, results='markup')
 ```
 
 # Installing the FLR packages
-
-
 
 ```{r}
 # install.packages(c('FLCore'),
 #  repos='http://flr-project.org/R')
 ```
-
-
 # FLCore
-
 
 ```{r, results='hide'}
 library(FLCore)
