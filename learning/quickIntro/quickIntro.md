@@ -11,9 +11,9 @@ title: A Quick Introduction to FLR
 
 
 
-{%highlight r%}
+```r
 # install.packages(c('FLCore'), repos='http://flr-project.org/R')
-{%endhighlight%}
+```
 
 
 
