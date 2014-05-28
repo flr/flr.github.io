@@ -12,7 +12,7 @@ opts_chunk$set(dev='png', cache=FALSE, fig.width=6, fig.height=6, tidy=TRUE, res
 
 # Installing the FLR packages
 
-We start by installing the most recent version of the FLR packages. Most FLR packages are currently not available in [CRAN](http://cran.r-project.org), but are distribiuted through the FLR Project package repository. To install the first of the packages, *FLCore*, please type:
+We start by installing the most recent version of the FLR packages. Most FLR packages are currently not available in [CRAN](http://cran.r-project.org), but are distributed through the FLR Project package repository. To install the first of the packages, *FLCore*, please type:
 
 ```{r}
 # install.packages(c('FLCore'),
@@ -24,10 +24,9 @@ We start by installing the most recent version of the FLR packages. Most FLR pac
 
 ```{r, results='hide'}
 library(FLCore)
-library(ggplotFL)
-data(ple4)
 ```
 
 ```{r, results='hide'}
+data(ple4)
 plot(ple4)
 ```
