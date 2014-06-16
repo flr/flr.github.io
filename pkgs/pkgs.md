@@ -3,7 +3,7 @@ layout: page
 title: FLR Packages
 ---
 
-[FLCore](#FLCore) [ggplotFL](#ggplotFL)
+## [FLCore](#FLCore) [ggplotFL](#ggplotFL)
 
 # [FLCore](http://flr-project.org/FLCore) <a name="FLCore"></a>
 
