@@ -3,9 +3,9 @@ layout: page
 title: FLR Packages
 ---
 
-[ggplotFL](#ggplotFL)
+[FLCore](#FLCore) [ggplotFL](#ggplotFL)
 
-# [FLCore](http://flr-project.org/FLCore)
+# [FLCore](http://flr-project.org/FLCore) <a name="FLCore"></a>
 
 ### Core classes and methods for fisheries modelling and management strategy simulation in R.
 
