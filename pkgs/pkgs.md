@@ -16,6 +16,7 @@ License: GPL-2
 Current version: 2.5.20140522
 
 Latest release: <https://github.com/flr/FLCore/releases/latest>
+
 - Package Source: <https://github.com/flr/FLCore/archive/v2.5.20140522.tar.gz>
 - Windows binary: <https://github.com/flr/FLCore/archive/v2.5.20140522.zip>
 
