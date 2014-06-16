@@ -15,6 +15,10 @@ License: GPL-2
 
 Current version: 2.5.20140522
 
+To INSTALL this package, start R and enter:
+
+	install.packages("FLCore", repos="http:///flr-project.org/R")
+
 Latest release: <https://github.com/flr/FLCore/releases/latest>
 
 - Package Source: <https://github.com/flr/FLCore/archive/v2.5.20140522.tar.gz>
@@ -22,9 +26,6 @@ Latest release: <https://github.com/flr/FLCore/releases/latest>
 
 Repository: <http://github.com/flr/FLCore/>   [![Build Status](https://travis-ci.org/flr/FLCore.svg?branch=master)](https://travis-ci.org/flr/FLCore)
 
-To install this package, start R and enter:
-
-	install.packages("FLCore", repos="http:///flr-project.org/R")
 
 Citation (from within R, enter citation("FLCore")):
 
