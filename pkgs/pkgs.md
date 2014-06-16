@@ -34,6 +34,8 @@ Build status: [![Build Status](https://travis-ci.org/flr/FLCore.svg?branch=maste
 
 #### Citation
 
-	Kell, L.T., Mosqueira, I., Grosjean, P., Fromentin, J-M., Garcia, D., Hillary, R., Jardim, E., Mardle, S., Pastoors, M.A., Poos, J.J., Scott, F., Scott R.D. 2007. FLR: an open-source framework for the evaluation and development of management strategies. ICES J. of Mar. Sci., 64: 640-646. [doi: 10.1093/icesjms/fsm012](dx.doi.org/10.1093/icesjms/fsm012).
+Kell, L.T., Mosqueira, I., Grosjean, P., Fromentin, J-M., Garcia, D., Hillary, R., Jardim, E., Mardle, S., Pastoors, M.A., Poos, J.J., Scott, F., Scott R.D. 2007. FLR: an open-source framework for the evaluation and development of management strategies. ICES J. of Mar. Sci., 64: 640-646. [doi: 10.1093/icesjms/fsm012](dx.doi.org/10.1093/icesjms/fsm012).
+
+___
 
 # ggplotFL
