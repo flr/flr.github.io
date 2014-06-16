@@ -20,9 +20,7 @@ Latest release: <https://github.com/flr/FLCore/releases/latest>
 - Package Source: <https://github.com/flr/FLCore/archive/v2.5.20140522.tar.gz>
 - Windows binary: <https://github.com/flr/FLCore/archive/v2.5.20140522.zip>
 
-Repository: <http://github.com/flr/FLCore/>
-
-Build status: [![Build Status](https://travis-ci.org/flr/FLCore.svg?branch=master)](https://travis-ci.org/flr/FLCore)
+Repository: <http://github.com/flr/FLCore/>   [![Build Status](https://travis-ci.org/flr/FLCore.svg?branch=master)](https://travis-ci.org/flr/FLCore)
 
 To install this package, start R and enter:
 
