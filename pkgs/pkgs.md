@@ -9,6 +9,11 @@ title: FLR Packages
 {{ my-include | markdownify }}
 
 
+<div markdown="1">
+{% include flcore.md %}
+</div>
+
+
 ### Core classes and methods for fisheries modelling and management strategy simulation in R.
 
 Author: FLR Team, initial design by Laurie Kell and Philippe Grosjean.
