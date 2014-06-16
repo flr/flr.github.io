@@ -5,14 +5,7 @@ title: FLR Packages
 
 # [FLCore](http://flr-project.org/FLCore)
 
-{% capture my-include %}{% include flcore.md %}{% endcapture %}
-{{ my-include | markdownify }}
-
-
-<div markdown="1">
 {% include flcore.md %}
-</div>
-
 
 ### Core classes and methods for fisheries modelling and management strategy simulation in R.
 
