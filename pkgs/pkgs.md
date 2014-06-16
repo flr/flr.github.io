@@ -15,7 +15,7 @@ License: GPL-2
 
 Current version: 2.5.20140522
 
-
+  
 
 To INSTALL this package, start R and enter:
 
