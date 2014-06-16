@@ -21,9 +21,8 @@ To install this package, start R and enter:
 
 	install.packages("FLCore", repos="http:///flr-project.org/R")
 
-- Latest release: <https://github.com/flr/FLCore/releases/latest>
-	- Package Source: <https://github.com/flr/FLCore/archive/v2.5.20140522.tar.gz>
-	- Windows binary: <https://github.com/flr/FLCore/archive/v2.5.20140522.zip>
+- Package Source: <https://github.com/flr/FLCore/archive/v2.5.20140522.tar.gz>
+- Windows binary: <https://github.com/flr/FLCore/archive/v2.5.20140522.zip>
 
 #### Source code
 
