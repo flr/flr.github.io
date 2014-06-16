@@ -14,7 +14,7 @@ Maintainer: FLR Team <flr-team at flr-project.org>
 License: GPL-2
 
 Current version: 2.5.20140522
-
+***
 To INSTALL this package, start R and enter:
 
 	install.packages("FLCore", repos="http:///flr-project.org/R")
