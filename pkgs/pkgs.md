@@ -7,16 +7,19 @@ title: FLR Packages
 
 ### Core classes and methods for fisheries modelling and management strategy simulation in R.
 
-- Author: FLR Team, initial design by Laurie Kell and Philippe Grosjean.
-- Maintainer: FLR Team <flr-team at flr-project.org>
-- License: GPL-2
-- Current version: 2.5.20140522
+Author: FLR Team, initial design by Laurie Kell and Philippe Grosjean.
+
+Maintainer: FLR Team <flr-team at flr-project.org>
+
+License: GPL-2
+
+Current version: 2.5.20140522
 
 - Latest release: <https://github.com/flr/FLCore/releases/latest>
 - Package Source: <https://github.com/flr/FLCore/archive/v2.5.20140522.tar.gz>
 - Windows binary: <https://github.com/flr/FLCore/archive/v2.5.20140522.zip>
 
-- **Repository**: <http://github.com/flr/FLCore/>
+- Repository: <http://github.com/flr/FLCore/>
 - Build status: [![Build Status](https://travis-ci.org/flr/FLCore.svg?branch=master)](https://travis-ci.org/flr/FLCore)
 
 
