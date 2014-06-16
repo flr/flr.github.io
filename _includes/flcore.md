@@ -1,8 +1,7 @@
-- Version: 2.5.20140616
-- Date: 2014-06-16
-- Author: FLR Team and various contributors.
-- Maintainer: Iago Mosqueira <iago.mosqueira AT jrc.ec.europa.eu>
+Author: FLR Team, initial design by Laurie Kell and Philippe Grosjean.
 
-- Repository: <https://github.com/flr/FLCore/>
-- Bug reports: <https://github.com/flr/FLCore/issues>
+Maintainer: Iago Mosqueira <iago.mosqueira AT jrc.ec.europa.eu>
 
+License: GPL-2
+
+Current version: 2.5.20140522
