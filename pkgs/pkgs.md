@@ -10,10 +10,13 @@ title: FLR Packages
 - Maintainer:
 - Current version:
 
-- **Repository**: <http://flr.github.io/FLCore/>
-- Build status: [![Build Status](https://travis-ci.org/flr/FLCore.svg?branch=master)](https://travis-ci.org/flr/ggplotFL)
-
 - Latest release: <https://github.com/flr/FLCore/releases/latest>
+	- Source package: <https://github.com/flr/FLCore/archive/v2.5.20140522.tar.gz>
+	- Windows binary: <https://github.com/flr/FLCore/archive/v2.5.20140522.zip>
+
+- **Repository**: <http://flr.github.io/FLCore/>
+- Build status: [![Build Status](https://travis-ci.org/flr/FLCore.svg?branch=master)](https://travis-ci.org/flr/FLCore)
+
 
 # ggplotFL
 
