@@ -28,7 +28,9 @@ Latest release: <https://github.com/flr/FLCore/releases/latest>
 
 #### Source code
 
-Repository: <http://github.com/flr/FLCore/>   [![Build Status](https://travis-ci.org/flr/FLCore.svg?branch=master)](https://travis-ci.org/flr/FLCore)
+Repository: <http://github.com/flr/FLCore/>
+
+Build status: [![Build Status](https://travis-ci.org/flr/FLCore.svg?branch=master)](https://travis-ci.org/flr/FLCore)
 
 
 #### Citation
