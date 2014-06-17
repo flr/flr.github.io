@@ -10,12 +10,16 @@ title: FLR Packages
 |---|---|---:|--:|
 | *Author*:           |  | FLR Team  |  |
 | *Maintainer*:       |  | Iago Mosqueira  |  |
+| *Source code*:      |  | <http://github.com/flr/FLCore/> |  [![Build Status](https://travis-ci.org/flr/FLCore.svg?branch=master)](https://travis-ci.org/flr/FLCore) |
+| *Bug reports*:      |  | <https://github.com/flr/FLCore/issues> | 
 
 Further details can be found [at the package pages](http://flr-project.org/FLCore)
 
-| *Downloads*:        |  | <https://github.com/flr/R/releases/latest> |  |
-| *Source code*:      |  | <http://github.com/flr/FLCore/> |  [![Build Status](https://travis-ci.org/flr/FLCore.svg?branch=master)](https://travis-ci.org/flr/FLCore) |
-| *Bug reports*:      |  | <https://github.com/flr/FLCore/issues> | 
+To install this package, start R and type:
+
+  install.packages("FLCore", repos="http://flr-project.org/R")
+
+or download from the [FLCore releases page](https://github.com/flr/FLCore/releases/latest)
 
 ___
 
