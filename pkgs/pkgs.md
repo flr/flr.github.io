@@ -3,7 +3,7 @@ layout: page
 title: FLR Packages
 ---
 
-[FLCore](#flcore) -- [ggplotFL](#ggplotfl) -- [FLa4a](#fla4a)
+[FLCore](#flcore) -- [ggplotFL](#ggplotfl) -- 
 
 # FLCore
 
@@ -46,5 +46,3 @@ Further details at the [ggplotFL package pages](http://flr-project.org/ggplotFL)
 # FLSAM
 
 # FLBEIA
-
-# 
