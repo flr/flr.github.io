@@ -5,7 +5,7 @@ title: FLR Packages
 
 [FLCore](#flcore) -- [ggplotFL](#ggplotfl) -- [FLa4a](#fla4a)
 
-# [FLCore](http://flr-project.org/FLCore)
+# FLCore
 
 ### Core classes and methods for fisheries modelling and management strategy evaluation in R.
 
@@ -19,7 +19,7 @@ Further details at the [FLCore package pages](http://flr-project.org/FLCore). Pl
 
 ___
 
-# [ggplotFL](http://flr-project.org/ggplotFL)
+# ggplotFL
 
 ### The FLR - ggplot2 interface package
 
