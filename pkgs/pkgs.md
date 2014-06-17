@@ -23,8 +23,8 @@ ___
 
 ### The FLR - ggplot2 interface package
 
-| *Author*: Laurie Kell & Iago Mosqueira |
-| *Maintainer*: Iago Mosqueira & Laurie Kell |
+| *Author*: | Laurie Kell & Iago Mosqueira |
+| *Maintainer*: | Iago Mosqueira & Laurie Kell |
 
 |---|--:|
 | [Package releases](https://github.com/flr/ggplotFL/releases/latest) |
