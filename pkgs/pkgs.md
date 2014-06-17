@@ -15,3 +15,5 @@ title: FLR Packages
 | Bug reports      |  | <https://github.com/flr/FLCore/issues> | 
 
 # ggplotFL
+
+### The FLR - ggplot2 interface package
