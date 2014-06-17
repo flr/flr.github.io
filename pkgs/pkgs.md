@@ -3,9 +3,9 @@ layout: page
 title: FLR Packages
 ---
 
-[FLCore](#FLCore) -- [ggplotFL](#ggplotFL) -- [FLa4a](#fla4a)
+[FLCore](#flcore) -- [ggplotFL](#ggplotfl) -- [FLa4a](#fla4a)
 
-# [FLCore](http://flr-project.org/FLCore) <a name="FLCore"></a>
+# [FLCore](http://flr-project.org/FLCore)
 
 ### Core classes and methods for fisheries modelling and management strategy evaluation in R.
 
@@ -19,7 +19,7 @@ Further details at the [FLCore package pages](http://flr-project.org/FLCore). Pl
 
 ___
 
-# [ggplotFL](http://flr-project.org/ggplotFL) <a name="ggplotFL"></a>
+# [ggplotFL](http://flr-project.org/ggplotFL)
 
 ### The FLR - ggplot2 interface package
 
