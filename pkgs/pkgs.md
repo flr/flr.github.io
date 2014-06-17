@@ -22,10 +22,11 @@ ___
 ### The FLR - ggplot2 interface package
 
 |---|--:|
-| *Author*: Laurie Kell & Iago Mosqueira |
-| *Maintainer*: Iago Mosqueira & Laurie Kell |
+| *Author*: |  Laurie Kell & Iago Mosqueira |
+| *Maintainer*: | Iago Mosqueira & Laurie Kell |
 | [Package releases](https://github.com/flr/ggplotFL/releases/latest) |
 | [Source code](http://github.com/flr/ggplotFL/) | [![Build Status](https://travis-ci.org/flr/ggplotFL.svg?branch=master)](https://travis-ci.org/flr/ggplotFL) |
+| *Vignette*: | [Plotting FLR objects with ggplotFL and ggplot2](https://github.com/flr/ggplotFL/raw/master/vignettes/ggplotFL.pdf) |
 
 Further details at the [ggplotFL package pages](http://flr-project.org/ggplotFL). Please submit [bug reports or suggestions](https://github.com/flr/ggplotFL/issues)
 
