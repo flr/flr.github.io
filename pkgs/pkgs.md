@@ -16,7 +16,6 @@ title: FLR Packages
 Further details can be found [at the package pages](http://flr-project.org/FLCore)
 
 To install this package, start R and type:
-
   install.packages("FLCore", repos="http://flr-project.org/R")
 
 or download from the [FLCore releases page](https://github.com/flr/FLCore/releases/latest)
