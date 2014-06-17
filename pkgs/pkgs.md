@@ -16,10 +16,4 @@ title: FLR Packages
 - [![Build Status](https://travis-ci.org/flr/FLCore.svg?branch=master)](https://travis-ci.org/flr/FLCore)
 - Bug reports: <https://github.com/flr/FLCore/issues>
 
-
-|   |   |   |   |
-|---|---|---|--:|
-|   |   |   |   |
-|   |   |   |   |
-
 # ggplotFL
