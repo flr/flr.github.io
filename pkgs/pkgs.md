@@ -7,10 +7,6 @@ title: FLR Packages
 
 ### Core classes and methods for fisheries modelling and management strategy evaluation in R.
 
-| *Author*: |  FLR Team |  | *Maintainer*: |  Iago Mosqueira |
-| [Package releases](https://github.com/flr/FLCore/releases/latest) |
-| [Source code](http://github.com/flr/FLCore/) |  |  | [![Build Status](https://travis-ci.org/flr/FLCore.svg?branch=master)](https://travis-ci.org/flr/FLCore) |
-
 | *Author*: FLR Team |  | *Maintainer*: Iago Mosqueira |
 
 [Package releases](https://github.com/flr/FLCore/releases/latest)
