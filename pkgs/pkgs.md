@@ -11,7 +11,7 @@ title: FLR Packages
 | [Package releases](https://github.com/flr/FLCore/releases/latest) |
 | [Source code](http://github.com/flr/FLCore/) |  |  | [![Build Status](https://travis-ci.org/flr/FLCore.svg?branch=master)](https://travis-ci.org/flr/FLCore) |
 
-| *Author*: |  FLR Team |  | *Maintainer*: |  Iago Mosqueira |
+| *Author*: FLR Team |  | *Maintainer*: Iago Mosqueira |
 
 [Package releases](https://github.com/flr/FLCore/releases/latest)
 
