@@ -9,8 +9,8 @@ title: FLR Packages
 
 - *Maintainer*: Iago Mosqueira <iago.mosqueira AT jrc.ec.europa.eu>
 - [*Downloads*](https://github.com/flr/FLCore/releases/latest)
-	- [Package Source](https://github.com/flr/FLCore/archive/v2.5.20140522.tar.gz)
-	- [Windows Binary](https://github.com/flr/FLCore/archive/v2.5.20140522.zip)
+- [tar.gz](https://github.com/flr/FLCore/archive/v2.5.20140522.tar.gz)
+- [win](https://github.com/flr/FLCore/archive/v2.5.20140522.zip)
 - *Source code*: <http://github.com/flr/FLCore/> - [![Build Status](https://travis-ci.org/flr/FLCore.svg?branch=master)](https://travis-ci.org/flr/FLCore)
 
 To install this package, start R and enter:
