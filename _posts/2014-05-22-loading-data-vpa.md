@@ -4,7 +4,6 @@
   date: 2014-05-22 14:32:00 GMT+1
   post_author: Iago Mosqueira
   tags: [vpa load]
-	fig:2014-05-22-loading-data-vpa/figs
 ---
 
 
