@@ -38,6 +38,5 @@ plot(9)
 
 ![plot of chunk unnamed-chunk-21](http://flr-project.org/figures/2014-05-22-loading-data-vpa/unnamed-chunk-2.png) 
 
-![center](/figures/2012-06-01-color-tools/fig2.png) 
 
 
