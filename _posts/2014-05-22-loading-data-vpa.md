@@ -15,23 +15,6 @@ library(FLCore)
 {% endhighlight %}
 
 
-
-{% highlight text %}
-## Loading required package: grid
-## Loading required package: lattice
-## Loading required package: MASS
-## FLCore 2.5.0 development version
-## 
-## 
-## Attaching package: 'FLCore'
-## 
-## The following objects are masked from 'package:base':
-## 
-##     cbind, rbind
-{% endhighlight %}
-
-
-
 {% highlight r %}
 plot(9)
 {% endhighlight %}
