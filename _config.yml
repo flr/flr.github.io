@@ -3,3 +3,4 @@ comments:
   provider: false
 gems:
   - jekyll-sitemap
+encoding: UTF-8
