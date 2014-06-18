@@ -36,6 +36,6 @@ library(FLCore)
 plot(9)
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-2](figures/2014-05-22-loading-data-vpa/unnamed-chunk-2.png) 
+![plot of chunk unnamed-chunk-2]({% site.url %}/figures/2014-05-22-loading-data-vpa/unnamed-chunk-2.png) 
 
 
