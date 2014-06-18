@@ -6,3 +6,4 @@ gems:
 encoding: UTF-8
 exclude:
   - "*.png"
+baseurl: http://flr-project.org
