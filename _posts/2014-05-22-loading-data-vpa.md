@@ -36,7 +36,6 @@ library(FLCore)
 plot(9)
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-2](2014-05-22-loading-data-vpa/figure/unnamed-chunk-2.png) 
 
 
 Checking the working directory
