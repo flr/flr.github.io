@@ -4,4 +4,6 @@ comments:
 gems:
   - jekyll-sitemap
 encoding: UTF-8
+exclude:
+  - "*.png"
 url: http://flr-project.org
