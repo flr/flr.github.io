@@ -10,7 +10,7 @@ knit: $(RMD)
 	-e "opts_chunk[['set']](fig.path=fig.path);" \
 	-e "render_jekyll();" \
 	-e "knit(input='$(RMD)', output='../2014-05-22-loading-data-vpa.md', envir=parent.frame(), encoding='UTF-8')"
-	sed -i 's/\/figures/{{ site.url }}\/figures\//' ../2014-05-22-loading-data-vpa.md
+	sed -i 's/figures/{{ site.url }}\/figures\//' ../2014-05-22-loading-data-vpa.md
 
 clean:
 	rm figs/*
