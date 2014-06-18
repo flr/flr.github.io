@@ -39,3 +39,5 @@ plot(9)
 ![plot of chunk unnamed-chunk-2](2014-05-22-loading-data-vpa/figure/unnamed-chunk-2.png) 
 
 
+
+
