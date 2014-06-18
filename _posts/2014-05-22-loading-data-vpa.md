@@ -36,7 +36,7 @@ library(FLCore)
 plot(9)
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-21]({{ site.baseurl }}/figures/2014-05-22-loading-data-vpa/unnamed-chunk-2.png) 
+![plot of chunk unnamed-chunk-21](http://flr-project.org/figures/2014-05-22-loading-data-vpa/unnamed-chunk-2.png) 
 
 ![center](/figures/2012-06-01-color-tools/fig2.png) 
 
