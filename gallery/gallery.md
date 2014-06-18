@@ -3,7 +3,7 @@
   title: FLR Gallery
 ---
 
-## Articles and code examples for the FLR packages
+## Example applications of the FLR packages
 
 <ul>
   {% for post in site.posts %}
