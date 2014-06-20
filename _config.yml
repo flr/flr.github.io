@@ -5,3 +5,4 @@ gems:
   - jekyll-sitemap
 encoding: UTF-8
 url: http://flr-project.org
+ignore: [README.md]

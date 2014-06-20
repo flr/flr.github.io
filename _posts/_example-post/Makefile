@@ -2,6 +2,9 @@ RMD := $(basename $(wildcard *.Rmd))
 
 all: knit
 
+echo:
+	echo $(RMD)
+
 knit: $(RMD).Rmd
 	R --vanilla --silent -e "require(knitr);" \
   -e "opts_knit[['set']](base.dir='../../figures/');" \
@@ -9,5 +12,8 @@ knit: $(RMD).Rmd
 	-e "fig.path <- paste0('figures/', '$(RMD)/');" \
 	-e "opts_chunk[['set']](fig.path=fig.path);" \
 	-e "render_jekyll();" \
-	-e "knit(input='$(RMD).Rmd', output='../$(RMD).md', encoding='UTF-8');" \
-	-e "purl(input='$(RMD).Rmd', output='../$(RMD).R', encoding='UTF-8')"
+	-e "knit(input='$(RMD).Rmd', output='../$(RMD).md', envir=parent.frame(), encoding='UTF-8')"
+
+clean:
+	rm figuress/*
+	rm *.md
