@@ -17,6 +17,9 @@ title: FLR Packages
 
 Further details at the [FLCore package pages](http://flr-project.org/FLCore). Please submit [bug reports or suggestions](https://github.com/flr/FLCore/issues)
 
+<iframe src="http://ghbtns.com/github-btn.html?user=flr&repo=FLCore&type=fork"
+  allowtransparency="true" frameborder="0" scrolling="0" width="53" height="20"></iframe>
+
 ___
 
 # ggplotFL
