@@ -19,8 +19,10 @@ Further details at the [FLCore package pages](http://flr-project.org/FLCore). Pl
 
 <iframe src="http://ghbtns.com/github-btn.html?user=flr&repo=FLCore&type=fork&count=true"
   allowtransparency="true" frameborder="0" scrolling="0" width="53" height="20"></iframe>
+
 <iframe src="http://ghbtns.com/github-btn.html?user=flr&repo=FLCore&type=watch&count=true"
   allowtransparency="true" frameborder="0" scrolling="0" width="53" height="20"></iframe>
+
 <iframe src="http://ghbtns.com/github-btn.html?user=flr&type=follow&count=true"
   allowtransparency="true" frameborder="0" scrolling="0" width="53" height="20"></iframe>
 ___
