@@ -13,18 +13,12 @@ title: FLR Packages
 | *Author*: |  FLR Team |
 | *Maintainer*: | Iago Mosqueira |
 | [Package releases](https://github.com/flr/FLCore/releases/latest) |
-| [Source code](http://github.com/flr/FLCore/) | [![Build Status](https://travis-ci.org/flr/FLCore.svg?branch=master)](https://travis-ci.org/flr/FLCore) |
+| <iframe src="http://ghbtns.com/github-btn.html?user=flr&repo=FLCore&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="53" height="20"></iframe> | [![Build Status](https://travis-ci.org/flr/FLCore.svg?branch=master)](https://travis-ci.org/flr/FLCore) |
 
 Further details at the [FLCore package pages](http://flr-project.org/FLCore). Please submit [bug reports or suggestions](https://github.com/flr/FLCore/issues)
 
-<iframe src="http://ghbtns.com/github-btn.html?user=flr&repo=FLCore&type=fork&count=true"
-  allowtransparency="true" frameborder="0" scrolling="0" width="53" height="20"></iframe>
+<iframe src="http://ghbtns.com/github-btn.html?user=flr&repo=FLCore&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="53" height="20"></iframe>
 
-<iframe src="http://ghbtns.com/github-btn.html?user=flr&repo=FLCore&type=watch&count=true"
-  allowtransparency="true" frameborder="0" scrolling="0" width="53" height="20"></iframe>
-
-<iframe src="http://ghbtns.com/github-btn.html?user=flr&type=follow&count=true"
-  allowtransparency="true" frameborder="0" scrolling="0" width="53" height="20"></iframe>
 ___
 
 # ggplotFL
@@ -40,7 +34,7 @@ ___
 
 Further details at the [ggplotFL package pages](http://flr-project.org/ggplotFL). Please submit [bug reports or suggestions](https://github.com/flr/ggplotFL/issues)
 
-<iframe src="http://ghbtns.com/github-btn.html?user=flr&repo=ggplotFL&type=watch&count=true"
+<iframe src="http://ghbtns.com/github-btn.html?user=flr&repo=ggplotFL&type=fork&count=true"
   allowtransparency="true" frameborder="0" scrolling="0" width="53" height="20"></iframe>
 
 # FLa4a
