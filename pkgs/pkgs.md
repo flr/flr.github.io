@@ -19,8 +19,6 @@ Further details at the [FLCore package pages](http://flr-project.org/FLCore). Pl
 
 <iframe src="http://ghbtns.com/github-btn.html?user=flr&repo=FLCore&type=fork&count=true"
   allowtransparency="true" frameborder="0" scrolling="0" width="53" height="20"></iframe>
-<iframe src="http://ghbtns.com/github-btn.html?user=flr&repo=FLCore&type=watch&count=true"
-  allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
 ___
 
 # ggplotFL
@@ -36,6 +34,8 @@ ___
 
 Further details at the [ggplotFL package pages](http://flr-project.org/ggplotFL). Please submit [bug reports or suggestions](https://github.com/flr/ggplotFL/issues)
 
+<iframe src="http://ghbtns.com/github-btn.html?user=flr&repo=ggplotFL&type=fork&count=true"
+  allowtransparency="true" frameborder="0" scrolling="0" width="53" height="20"></iframe>
 
 # FLa4a
 
