@@ -1,6 +1,2 @@
----
-layout: page
----
-
-LAUNCH of new FLR website, still work in progress. 20.June.2014 13:32
+- LAUNCH of new FLR website, still work in progress. 20.June.2014 13:32
 
