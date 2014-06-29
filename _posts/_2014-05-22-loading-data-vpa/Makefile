@@ -1,8 +1,8 @@
 RMD := $(basename $(wildcard *.Rmd))
 
-all: knit
+all: ../$(RMD).md
 
-knit: $(RMD).Rmd
+../$(RMD).md: $(RMD).Rmd
 	R --vanilla --silent -e "require(knitr);" \
   -e "opts_knit[['set']](base.dir='../../figures/');" \
 	-e "opts_knit[['set']](base.url='http://flr-project.org/');" \
