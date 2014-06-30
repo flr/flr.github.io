@@ -6,9 +6,9 @@
   <div class="page-title-bar">
     <div class="inner-content">
 			<h1>{{ page.title }}</h1>
-{% capture asset %}{{ page.path | split:'/' | last | remove:'\.md'}}{% endcapture %}
-			<h3>{{ asset }}</h3>
-
+			{% capture postname %}{{ page.path | split:'/' | last | remove:'\.md'}}
+			{% endcapture %}
+      <a href="assets/{{ postname }}/{{ postname }}.R">R code</a>
     </div>
   </div>
 
