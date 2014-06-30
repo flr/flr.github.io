@@ -5,7 +5,6 @@
 
 ## Example applications of the FLR packages
 
-<ul>
 {% for category in site.categories %}
   <li><a name="{{ category | first }}">{{ category | first }}</a>
     <ul>
@@ -17,4 +16,3 @@
     </ul>
   </li>
 {% endfor %}
-</ul>
