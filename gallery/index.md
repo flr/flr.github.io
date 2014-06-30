@@ -6,15 +6,6 @@
 ## Example applications of the FLR packages
 
 <ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
-
-
-<ul>
 {% for category in site.categories %}
   <li><a name="{{ category | first }}">{{ category | first }}</a>
     <ul>
