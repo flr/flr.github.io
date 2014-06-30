@@ -6,11 +6,11 @@ all: ../$(RMD).md
 	R --vanilla --silent -e "require(knitr);" \
   -e "opts_knit[['set']](base.dir='../../');" \
 	-e "opts_knit[['set']](base.url='http://flr-project.org/');" \
-	-e "fig.path <- paste0('figures/', '$(RMD)/');" \
+	-e "fig.path <- paste0('assets/$(RMD)/figures/');" \
 	-e "opts_chunk[['set']](fig.path=fig.path);" \
 	-e "render_jekyll();" \
 	-e "knit(input='$(RMD).Rmd', output='../$(RMD).md', encoding='UTF-8');" \
-	-e "purl(input='$(RMD).Rmd', output='../../code/$(RMD)/$(RMD).R', encoding='UTF-8')"
+	-e "purl(input='$(RMD).Rmd', output='../../assets/$(RMD)/$(RMD).R', encoding='UTF-8')"
 
 dirs:
 	ifeq "$(wildcard $(MY_DIRNAME) )" ""
