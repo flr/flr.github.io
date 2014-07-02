@@ -16,7 +16,7 @@ sections: [intro]
 
 
 {% for section in page.sections %}
-{{ section }}
+<h2>{{ section }}</h2>
 	<ul>
 		{% for page in page.pages %}
 			{% for sec in page.section %}
