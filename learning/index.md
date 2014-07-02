@@ -2,7 +2,7 @@
 layout: page
 title: Learning FLR
 pages:
-  - quickIntro
+  - quickIntro.md
 sections: [intro, assessment]
 ---
 
