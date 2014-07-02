@@ -7,7 +7,7 @@ sections: [Introduction, SA, Plotting, Forecast]
 ---
 
 {% for section in page.sections %}
-### {{ section }}
+<h3>{{ section }}</h3>
 <ul>
 {% for page in site.pages %}
 {% capture filext %}{{ page.url | split:'.' | last }}{% endcapture %}
