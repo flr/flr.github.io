@@ -3,7 +3,7 @@ layout: page
 title: Learning FLR
 pages:
   - quickIntro
-sections: [intro assessment]
+sections: [intro, assessment]
 ---
 
 <ul>
