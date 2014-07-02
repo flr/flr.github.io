@@ -2,7 +2,7 @@
 layout: page
 title: Learning FLR
 pages:
-  - quickIntro.md
+  - quickIntro
 sections: [intro, assessment]
 ---
 
@@ -18,13 +18,10 @@ sections: [intro, assessment]
 {% for section in page.sections %}
 ### {{ section }}
 <ul>
-	{% for page in page.pages %}
-	{{ section }} - {{page.section }} - {{ page.title }}
-	{% if page.section == section %}
-	<li>
-		<a href="{{ page }}/{{ page }}.html">{{ page }}</a>
-	</li>
-	{% endif %}
-	{% endfor %}
+{% for page in site.pages %}
+  {% if page.learning == section %}
+    <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
+  {% endif %}
+{% endfor %}
 </ul>
 {% endfor %}
