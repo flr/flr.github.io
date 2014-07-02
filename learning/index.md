@@ -21,9 +21,7 @@ sections: [intro]
 		{% for page in page.pages %}
 			{% for sec in page.section %}
 				{% if sec == section %}
-    		<li>
-      		<a href="{{ page.url }}">{{ page.title }}</a>
-    		</li>
+				{{ page }}
 				{% endif %}   <!-- cat-match-p -->
 			{% endfor %}  <!-- page-category -->
 			{% endfor %} <!-- page -->
