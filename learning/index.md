@@ -16,11 +16,11 @@ sections: [intro assessment]
 
 
 {% for section in page.sections %}
-<h2>{{ section }}</h2>
+###{{ section }}
 <ul>
-		{% for page in page.pages %}
-		{% if page.section == section %}
-		{{ page }}
+		{% for pag in page.pages %}
+		{% if pag.section == section %}
+		{{ pag }}
 		{% endif %}
 		{% endfor %}
 </ul>
