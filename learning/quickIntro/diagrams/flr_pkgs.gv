@@ -23,7 +23,6 @@ FLCore [fillcolor=gray95];
 				fillcolor=azure3;
   }
 
-	FLCore -- FLFishery;
 	FLCore -- FLAssess;
 	FLAssess -- FLXSA;
 	FLAssess -- FLSAM;
@@ -33,5 +32,4 @@ FLCore [fillcolor=gray95];
 	FLCore -- FLash;
 	FLash -- FLBRP;
 	FLCore -- FLa4a;
-	FLCore -- SQLiteFL;
 }
