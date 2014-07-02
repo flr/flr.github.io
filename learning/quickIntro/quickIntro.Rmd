@@ -3,14 +3,37 @@ layout: tutorial
 title: A Quick Introduction to FLR
 ---
 
-Welcome to FLR. This is going to be a short run through some of the basic elements of the main FLR packages. For further learning material, please visit the [learning page]({{ site.baseurl }}learning/learning.html) or the sites for [each individual package]({{ site.baseurl }}pkgs/pkgs.html).
-
 ```{r, ini, echo=FALSE, results='hide', message=FALSE}
 render_jekyll()
-opts_chunk$set(dev='png', cache=FALSE, fig.width=6, fig.height=6, tidy=TRUE, results='markup')
+opts_chunk$set(dev='png', cache=FALSE, fig.width=6, fig.height=6,
+	tidy=TRUE, results='markup')
 ```
 
+# Welcome
+
+# FLR in a nutshell
+
+
+![FLR packages](diagrams/flr_pkgs/flr_pkgs.png) 
+
 # Installing the FLR packages
+
+# Loading data
+
+# Creating FLQuant
+
+# Plot
+
+# Operations
+
+# FLStock
+
+# Stock Assessment
+
+# FLSR
+
+# Further info
+
 
 We start by installing the most recent version of the FLR packages. Most FLR packages are currently not available in [CRAN](http://cran.r-project.org), but are distributed through the FLR Project package repository. To install the first of the packages, *FLCore*, please type:
 
@@ -19,14 +42,3 @@ We start by installing the most recent version of the FLR packages. Most FLR pac
 #  repos='http://flr-project.org/R')
 ```
 
-
-# FLCore
-
-```{r, results='hide'}
-library(FLCore)
-```
-
-```{r, results='hide'}
-data(ple4)
-plot(ple4)
-```
