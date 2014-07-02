@@ -16,12 +16,12 @@ sections: [intro assessment]
 
 
 {% for section in page.sections %}
-###{{ section }}
+### {{ section }}
 <ul>
-		{% for page in page.pages %}
-    <li>
-      <a href="{{ page }}/{{ page }}.html">{{ page }}</a>
-    </li>
-		{% endfor %}
+{% for page in page.pages %}
+<li>
+<a href="{{ page }}/{{ page }}.html">{{ page }}</a>
+</li>
+{% endfor %}
 </ul>
 {% endfor %}
