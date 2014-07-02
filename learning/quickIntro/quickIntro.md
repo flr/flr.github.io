@@ -8,8 +8,7 @@ title: A Quick Introduction to FLR
 
 # FLR in a nutshell
 
-![FLR packages](diagrams/flr_pkgs.png) 
-[![FLR packages](diagrams/flr_pkgs.png)]({{ site.url }}/learning/quickIntro/diagrams/flr_pkgs.png)
+[![FLR packages](diagrams/flr_pkgs.png)]({{ page.url }}/diagrams/flr_pkgs.png)
 
 # Installing the FLR packages
 
