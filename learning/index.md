@@ -19,7 +19,9 @@ sections: [intro assessment]
 ###{{ section }}
 <ul>
 		{% for page in page.pages %}
-		{{ page }}
+    <li>
+      <a href="{{ page }}/{{ page }}.html">{{ page }}</a>
+    </li>
 		{% endfor %}
 </ul>
 {% endfor %}
