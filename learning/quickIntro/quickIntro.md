@@ -1,6 +1,9 @@
 ---
 layout: tutorial
 title: A Quick Introduction to FLR
+date: 2014-05-22 14:32:00 GMT+1
+tags: [flcore introduction flquant flstock ple4]
+learning: Introduction
 ---
 
 
@@ -16,11 +19,18 @@ We start by installing the most recent version of the FLR packages. Most FLR pac
 
 
 {% highlight r %}
-# install.packages(c('FLCore'), repos='http://flr-project.org/R')
+install.packages(c("FLCore"), repos = "http://flr-project.org/R")
 {% endhighlight %}
 
 
 # Loading data
+
+{% highlight r %}
+url <- "http://flr-project.org/assets/data/ple4_ca/ple4_ca.csv"
+
+ca <- read.csv(url)
+{% endhighlight %}
+
 
 # Creating FLQuant
 
@@ -35,6 +45,3 @@ We start by installing the most recent version of the FLR packages. Most FLR pac
 # FLSR
 
 # Further info
-
-
-
