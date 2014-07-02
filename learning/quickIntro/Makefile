@@ -15,4 +15,4 @@ clean:
 
 %.md: %.Rmd
 	R -e "library(knitr)" \
-		-e "knit('$*.Rmd')"
+		-e "knit('$*.Rmd', output='$*.md')"
