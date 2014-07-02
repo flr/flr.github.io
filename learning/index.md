@@ -24,6 +24,6 @@ sections: [intro]
 					<li><a href="{{ page.url }}">{{ page.title }}</a></li>
 				{% endif %}   <!-- cat-match-p -->
 			{% endfor %}  <!-- page-category -->
-			{% endfor % } <!-- page -->
+			{% endfor %} <!-- page -->
 	</ul>
 {% endfor %}
