@@ -12,6 +12,7 @@ opts_chunk$set(dev='png', cache=FALSE, fig.width=6, fig.height=6,
 # FLR in a nutshell
 
 ![FLR packages](diagrams/flr_pkgs.png) 
+[![FLR packages](diagrams/flr_pkgs.png)]({{ site.url }}/learning/quickIntro/diagrams/flr_pkgs.png)
 
 # Installing the FLR packages
 
