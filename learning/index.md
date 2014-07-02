@@ -13,7 +13,7 @@ sections: [Introduction, SA, Plotting, Forecast]
 {% capture filext %}{{ page.url | split:'.' | last }}{% endcapture %}
 	{% if filext == 'html' %}
 	  {% if page.learning == section %}
-  	  <h4><a href="{{ page.url }}">{{ page.title }}</a></h4>
+  	  <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
   	{% endif %}
   {% endif %}
 {% endfor %}
