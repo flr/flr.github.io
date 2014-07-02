@@ -19,7 +19,7 @@ sections: [intro, assessment]
 ### {{ section }}
 <ul>
 	{% for page in page.pages %}
-	{{ section }} - {{page.section }}
+	{{ section }} - {{page.section }} - {{ page.title }}
 	{% if page.section == section %}
 	<li>
 		<a href="{{ page }}/{{ page }}.html">{{ page }}</a>
