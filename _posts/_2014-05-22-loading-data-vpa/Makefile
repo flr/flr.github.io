@@ -11,8 +11,3 @@ all: ../$(RMD).md
 	-e "render_jekyll();" \
 	-e "knit(input='$(RMD).Rmd', output='../$(RMD).md', encoding='UTF-8');" \
 	-e "purl(input='$(RMD).Rmd', output='../../assets/$(RMD)/$(RMD).R', encoding='UTF-8')"
-
-dirs:
-	ifeq "$(wildcard $(MY_DIRNAME) )" ""
-		-mkdir $(MY_DIRNAME)
-	endif
