@@ -11,7 +11,7 @@ title: A Quick Introduction to FLR
 # FLR in a nutshell
 
 
-![FLR packages](diagrams/flr_pkgs/flr_pkgs.png) 
+![FLR packages](diagrams/flr_pkgs.png) 
 
 # Installing the FLR packages
 
