@@ -17,13 +17,4 @@ sections: [intro assessment]
 
 {% for section in page.sections %}
 <h2>{{ section }}</h2>
-	<ul>
-		{% for page in page.pages %}
-			{% for sec in page.section %}
-				{% if sec == section %}
-				{{ page }}
-				{% endif %}   <!-- cat-match-p -->
-			{% endfor %}  <!-- page-category -->
-			{% endfor %} <!-- page -->
-	</ul>
 {% endfor %}
