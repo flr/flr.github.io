@@ -18,10 +18,8 @@ sections: [intro assessment]
 {% for section in page.sections %}
 ###{{ section }}
 <ul>
-		{% for pag in page.pages %}
-		{% if pag.section == section %}
-		{{ pag }}
-		{% endif %}
+		{% for page in page.pages %}
+		{{ page }}
 		{% endfor %}
 </ul>
 {% endfor %}
