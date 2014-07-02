@@ -18,7 +18,7 @@ sections: [intro assessment]
 {% for section in page.sections %}
 <h2>{{ section }}</h2>
 	<ul>
-		{% for page in site.pages %}
+		{% for page in page.pages %}
 		{{ page }}
 		{% endfor %}
 	</ul>
