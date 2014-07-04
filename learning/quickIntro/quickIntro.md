@@ -6,12 +6,9 @@ tags: [flcore introduction flquant flstock ple4]
 learning: Introduction
 ---
 
-
-
-
 # FLR in a nutshell
 
-[![FLR packages](/assets/diagrams/flrpkgs.png)](/assets/diagrams/flrpkgs.png)
+[![FLR packages](../../assets/diagrams/flrpkgs.png)](../../assets/diagrams/flrpkgs.png)
 
 # Installing the FLR packages
 
