@@ -27,9 +27,9 @@
           <li>Interacts nicely with many R packages.</li>
         </ul>
 			<h3>NEWS</h3>
-			{% include headlines.md %}
-			{% capture my-include %}{% include headlines.md %}{% endcapture %}
-			{{ my-include | markdownify }}
+        <ul class="bordered-list">
+				{% include headlines.md %}
+        </ul>
       </div>
       <div class="col">
         <h3>Quick start</h3>
