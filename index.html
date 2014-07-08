@@ -28,6 +28,8 @@
         </ul>
 			<h3>NEWS</h3>
 			{% include headlines.md %}
+			{% capture my-include %}{% include headlines.md %}{% endcapture %}
+			{{ my-include | markdownify }}
       </div>
       <div class="col">
         <h3>Quick start</h3>
