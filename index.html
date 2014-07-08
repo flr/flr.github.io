@@ -28,10 +28,9 @@
         </ul>
 			<h3>NEWS</h3>
         <ul class="bordered-list">
-				
-				{% capture my-include %}{% include headlines.md %}{% endcapture %}
-				{{ my-include | markdownify }}
 
+				{% include markdown-partial.html filename:'hedalines.md' %}
+				
         </ul>
       </div>
       <div class="col">
