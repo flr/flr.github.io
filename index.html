@@ -28,7 +28,10 @@
         </ul>
 			<h3>NEWS</h3>
         <ul class="bordered-list">
-				{% include headlines.md %}
+				
+				{% capture my-include %}{% include headlines.md %}{% endcapture %}
+				{{ my-include | markdownify }}
+
         </ul>
       </div>
       <div class="col">
