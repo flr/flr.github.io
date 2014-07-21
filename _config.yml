@@ -6,4 +6,4 @@ gems:
 encoding: UTF-8
 url: http://flr-project.org
 permalink: /gallery/:categories/:year/:month/:day/:title.html
-ignore: [README.md]
+ignore: [README.md Makefile]
