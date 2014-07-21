@@ -28,8 +28,8 @@
         </ul>
 			<h3>NEWS</h3>
 
-			{% capture my-include %}{% include NEWS.md %}{% endcapture %}
-			{{ my-include | markdownify }}	
+{% capture my-include %}{% include NEWS.md %}{% endcapture %}
+{{ my-include | unindent | markdownify }}	
 
       </div>
       <div class="col">
