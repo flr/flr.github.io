@@ -1,4 +1,5 @@
 RMD := $(basename $(wildcard *.Rmd))
+ASSETS := ../../assets/$(RMD)/
 
 all: ../$(RMD).md
 
@@ -10,4 +11,5 @@ all: ../$(RMD).md
 	-e "opts_chunk[['set']](fig.path=fig.path);" \
 	-e "render_jekyll();" \
 	-e "knit(input='$(RMD).Rmd', output='../$(RMD).md', encoding='UTF-8');" \
-	-e "purl(input='$(RMD).Rmd', output='../../assets/_$(RMD)/$(RMD).R', encoding='UTF-8')"
+	-e "purl(input='$(RMD).Rmd', output='$(ASSETS)/$(RMD).R', encoding='UTF-8')"
+

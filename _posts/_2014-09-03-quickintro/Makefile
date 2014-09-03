@@ -1,5 +1,5 @@
 RMD := $(basename $(wildcard *.Rmd))
-ASSETS := ../../assets/_$(RMD)/
+ASSETS := ../../asset/$(RMD)/
 
 all: ../$(RMD).md
   ifeq "$(wildcard $(ASSETS) )" ""
@@ -16,7 +16,3 @@ all: ../$(RMD).md
 	-e "knit(input='$(RMD).Rmd', output='../$(RMD).md', encoding='UTF-8');" \
 	-e "purl(input='$(RMD).Rmd', output='$(ASSETS)/$(RMD).R', encoding='UTF-8')"
 
-assets:
-
-
-test:
