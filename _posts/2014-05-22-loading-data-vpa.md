@@ -34,7 +34,7 @@ library(FLCore)
 plot(9)
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-2](http://flr-project.org/assets/_2014-05-22-loading-data-vpa/figures/unnamed-chunk-2.png) 
+![plot of chunk unnamed-chunk-2](http://flr-project.org/assets/2014-05-22-loading-data-vpa/figures/unnamed-chunk-2.png) 
 
 # Loading from CSV files
 
