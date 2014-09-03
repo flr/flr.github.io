@@ -1,9 +1,10 @@
 ---
   layout: post
   title: Example post
-  date: 2014-05-22 14:32:00 GMT+1
+  date: 
   post_author: You
   tags: [one two]
+  category:
 ---
 
 
@@ -11,4 +12,8 @@
 
 ```{r}
 library(FLCore)
+```
+
+```{r}
+plot(9)
 ```
