@@ -1,7 +1,7 @@
 RMD := $(basename $(wildcard *.Rmd))
-ASSETS := ../../assets/$(RMD)/
+ASSETS := ../../assets/$(RMD)
 
-all: ../$(RMD).md
+all: ../$(RMD).md $(ASSETS)/$(RMD).pdf
 
 ../$(RMD).md: $(RMD).Rmd
 	R --vanilla --silent -e "require(knitr);" \
@@ -16,7 +16,12 @@ all: ../$(RMD).md
 test: $(RMD).Rmd
 	pandoc $(RMD).md -o $(RMD).html
 
-pdf: $(RMD).md clean
+.PHONY: pdf
+
+pdf: $(ASSETS)/$(RMD).pdf
+	$(MAKE) clean
+
+$(ASSETS)/$(RMD).pdf: $(RMD).md
 	pandoc $(RMD).md -o $(ASSETS)/$(RMD).pdf
 
 $(RMD).md: $(RMD).Rmd
@@ -25,6 +30,8 @@ $(RMD).md: $(RMD).Rmd
 		-e "fig.path <- paste0('./figures/');" \
 		-e "opts_chunk[['set']](fig.path=fig.path);" \
 		-e "knit(input='$(RMD).Rmd', output='./$(RMD).md', encoding='UTF-8');" \
+
+.PHONY: clean
 
 clean:
 	rm -rf ./figures $(RMD).md
