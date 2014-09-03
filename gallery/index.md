@@ -7,8 +7,10 @@
 
 <ul>
   {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
+    {% if post.categories contains 'gallery' %}
+    	<li>
+	      <a href="{{ post.url }}">{{ post.title }}</a>
+    	</li>
+    {% endif %}
   {% endfor %}
 </ul>

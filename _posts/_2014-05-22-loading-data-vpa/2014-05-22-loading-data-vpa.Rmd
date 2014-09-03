@@ -17,3 +17,18 @@ library(FLCore)
 plot(9)
 ```
 
+# Loading from CSV files
+
+## FLQuant
+
+## FLStock
+
+# Accessing data from a database
+
+## SQLite
+
+# Legacy file formats
+
+## Lowestoft VPA suite
+
+#
