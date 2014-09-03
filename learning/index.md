@@ -1,21 +1,14 @@
 ---
-layout: page
-title: Learning FLR
-pages:
-  - quickIntro
-sections: [Introduction, SA, Plotting, Forecast]
+  layout: page
+  title: Learning FLR
 ---
 
-{% for section in page.sections %}
-<h2>{{ section }}</h2>
 <ul>
-{% for page in site.pages %}
-{% capture filext %}{{ page.url | split:'.' | last }}{% endcapture %}
-	{% if filext == 'html' %}
-	  {% if page.learning == section %}
-  	  <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
-  	{% endif %}
-  {% endif %}
-{% endfor %}
+  {% for post in site.posts %}
+    {% if post.categories contains 'learning' %}
+    	<li>
+	      <a href="{{ post.url }}">{{ post.title }}</a>
+    	</li>
+    {% endif %}
+  {% endfor %}
 </ul>
-{% endfor %}
