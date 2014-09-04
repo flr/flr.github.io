@@ -1,29 +1,17 @@
-2007
-====
+---
+layout: page
+title: FLR References
+---
 
-1.  Kell, Laurence Thomas, Iago Mosqueira, Philippe Grosjean, Jean-Marc
-    Fromentin, Dorleta Garcia, Richard Hillary, Ernesto Jardim, et al.
-    “FLR: an open-source framework for the evaluation and development of
-    management strategies,” 2007.
-    64[http://icesjms.oxfordjournals.org/cgi/doi/10.1093/icesjms/fsm012](http://icesjms.oxfordjournals.org/cgi/doi/10.1093/icesjms/fsm012 "http://icesjms.oxfordjournals.org/cgi/doi/10.1093/icesjms/fsm012").
 
-2008
-====
+# 2007
 
-2009
-====
+1.  [@Kell2007]
 
-2010
-====
+# 2008
 
-2011
-====
+# 2009
 
-2012
-====
+1.  [@Hillary2009]
 
-2013
-====
-
-2014
-====
+# 2010
