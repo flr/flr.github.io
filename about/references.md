@@ -4,9 +4,7 @@ title: FLR References
 bibliography: references.bib
 ---
 
-**Studies that have used FLR or make reference to it.**
-
-Please submit you FLR-based paper via the [flr.github.io issue tracker](https://github.com/flr/flr.github.io/issues).
+Studies that have used FLR or make reference to it. Please submit you FLR-based paper via the [flr.github.io issue tracker](https://github.com/flr/flr.github.io/issues).
 
 
 # 2007
