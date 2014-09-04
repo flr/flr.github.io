@@ -30,4 +30,6 @@ Studies that have used FLR or make reference to it. Please submit you FLR-based 
 
 # 2013
 
+-  Garcia, D. Urtizberea, A., Diez, G.,  Gil, J. and Marchal, P. 2013. Bio-economic management strategy evaluation of deepwater stocks using the FLBEIA model. *Aquatic Living Resources*, 26, pp 365-379. [doi:10.1051/alr/2013069](http://dx.doi.org/10.1051/alr/2013069).
+
 # 2014
