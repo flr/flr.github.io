@@ -34,7 +34,12 @@
       <div class="col">
         <h3>Quick start</h3>
 				<p>
-				You can install the latest version of <a href="{{site.baseurl}}pkgs/index.html">FLR packages</a>
+				You can install the latest version of the <a href="{{site.baseurl}}pkgs/index.html">FLR packages</a> using our installation script
+				</p>
+
+        {% highlight r %}source("http://flr-project.org/R/instFLR.R"){% endhighlight %}
+				<p>
+				or, if you know you have all the necessary dependencies, directlt from our repository
 				</p>
 
         {% highlight r %}install.packages(repos="http://flr-project.org/R"){% endhighlight %}
