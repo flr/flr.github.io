@@ -34,6 +34,12 @@ FLCore [fillcolor=gray95];
 				color=linen;
 				fillcolor=linen;
   }
+	subgraph cluster_5 {
+        "FLBEIA";
+        label = "Bio-economy";
+				color=linen;
+				fillcolor=linen;
+  }
 
 
 	FLCore -- FLAssess;
@@ -46,10 +52,12 @@ FLCore [fillcolor=gray95];
 	FLCore -- FLash;
 	FLCore -- FLa4a;
 	FLash -- FLBRP;
+	FLBRP -- FLBEIA;
 	FLCore -- FLFleet;
 	FLFleet -- FLRDynState;
 	FLCore -- FLFishery;
 	FLCore -- SQLiteFL;
 	FLCore -- diags;
 	diags -- kobe;
+
 }
