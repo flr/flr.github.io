@@ -1,8 +1,8 @@
 ---
-  layout: post
   title: Example post
-  date: 
   post_author: You
+  date: 
+  layout: post
   tags: [one two]
   category:
 ---
