@@ -39,9 +39,7 @@ ___
 
 # FLa4a
 
-### Core classes and methods for fisheries modelling and management strategy evaluation in R.
-
-A simple and robust statistical catch at age model for the Assesment For All (A4A) initiative.
+### A simple and robust statistical catch at age model for the Assesment For All (A4A) initiative.
 
 |---|--:|
 | *Author*: |  Colin P. Millar and Ernesto Jardim |
