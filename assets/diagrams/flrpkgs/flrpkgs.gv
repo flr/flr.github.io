@@ -4,8 +4,6 @@ graph [style="filled", color=azure1, fillcolor=azure1, labelloc="b"];
 
 node [style=filled,color=black,fillcolor=white];
 
-FLCore [fillcolor=gray95];
-
 	subgraph cluster_0 {
         "FLAssess" "FLXSA" "FLSAM" "FLa4a" "biodyn" "aspic";
         label = "Stock Assessment";
