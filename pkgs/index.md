@@ -3,6 +3,9 @@ layout: page
 title: FLR Packages
 ---
 
+[![FLR packages](/assets/diagrams/flrpkgs.png)](/assets/diagrams/flrpkgs.png)
+
+
 [FLCore](#flcore) -- [ggplotFL](#ggplotfl) -- 
 
 # FLCore
