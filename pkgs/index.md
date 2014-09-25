@@ -39,6 +39,20 @@ ___
 
 # FLa4a
 
+### Core classes and methods for fisheries modelling and management strategy evaluation in R.
+
+A simple and robust statistical catch at age model for the Assesment For All (A4A) initiative.
+
+|---|--:|
+| *Author*: |  Colin P. Millar and Ernesto Jardim |
+| *Maintainer*: | Ernesto Jardim |
+| [Package releases](https://github.com/flr/FLa4a/releases/latest) |
+| [Source code](http://github.com/flr/FLa4a/) | [![Build Status](https://travis-ci.org/flr/FLa4a.svg?branch=master)](https://travis-ci.org/flr/FLa4a) |
+
+Further details at the [FLa4a package pages](http://flr-project.org/FLa4a). Please submit [bug reports or suggestions](https://github.com/flr/FLa4a/issues)
+
+___
+
 # FLAssess
 
 # FLash
