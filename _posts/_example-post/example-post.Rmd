@@ -1,10 +1,11 @@
 ---
-  title: Example post
-  post_author: You
-  date: 
-  layout: post
-  tags: [one two]
-  category:
+title: Example post
+post_author: You
+date: 
+layout: post
+tags: [one two]
+category:
+rights:  Creative Commons Share Alike 4.0
 ---
 
 

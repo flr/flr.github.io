@@ -1,0 +1,83 @@
+---
+title: Fitting stock-recruitment relationships with FLSR
+post_author: Iago Mosqueira & FLR Team
+date: October 2014
+layout: post
+tags: [one two]
+category: learning
+learning: modelling
+rights:  Creative Commons Share Alike 4.0
+---
+
+A fundamental problem in the quantitative assessment of fisheries is the relationship between the reproductive potential of the stock, commonly measured in terms of spawning stock biomass (SSB), and the number of recruits into the population they are expected to produce. The stock-recruitment relationship is an essential element for assessing the resilience of a fish population, and forecasting the likely effect and time of responses to management measures.
+
+Although modern statistical catch-at-age assessment methods generally integrate the estimation of the parameters of this relationship together with all others, VPA-based models require fitting the stock-recruitment relationship based on the model estimates of abundance. Also, the relationship is employed in most forecasting algorithms, such as those offered by the `FLash` package.
+
+Stock-recruitment relationships in FLR are handled by the `FLSR` class, which contains slots for both inputs (`rec` and `ssb`), outputs (`fitted` and `residuals`), model specification (`model`, `lkhd`, `initial`), and parameter outputs (`params`, `vcov`, `logLik`).
+
+We will now look at how objects of this class can be created, how to fit stock-recruitment models, what models are already available in `FLCore`, and the methods for model fitting, inspection of results and diagnostics.
+
+# The FLSR class
+
+```{r}
+library(FLCore)
+library(ggplotFL)
+```
+
+
+```{r data}
+data(nsher)
+```
+
+## Creating `FLSR` objects
+
+```{r convert}
+# LOAD FLStock object
+data(ple4)
+
+# CONVERT to FLSR
+psr4 <- as.FLSR(ple4)
+
+# ASSIGN model
+model(psr4) <- ricker
+```
+
+# Model fitting
+
+## Maximum likelihood estimation with `fmle`
+
+## Fixing parameters
+
+## Using covariates
+
+# Stock-recruitment models
+
+### Beverton & Holt (`bevholt`)
+
+### Ricker (`ricker`)
+
+### Segmented regression (`segres`)
+
+### Cushing (`cushing`)
+
+### Shepherd (`shepherd`)
+
+# Assessing the fit
+
+```{r fit}
+logLik(nsher)
+
+AIC(nsher)
+BIC(nsher)
+
+```
+
+## Likelihood profiling
+
+```{r profplot}
+profile(nsher)
+```
+
+# Adding other SR models
+
+# Further information and References
