@@ -9,7 +9,9 @@ learning: modelling
 rights:  Creative Commons Share Alike 4.0
 ---
 
-A fundamental problem in the quantitative assessment of fisheries is the relationship between the reproductive potential of the stock, e.g. egg production,commonly approximated by the spawning stock biomass (SSB), and the number of recruits into the population expected to be produced. The stock-recruitment relationship is an essential element for assessing the resilience of a fish population, and forecasting the likely effect and time of responses to management measures.
+The stock and recruitment problem may be considered as the search for the relationship between parental stock size 
+
+A fundamental problem in the quantitative assessment of fisheries is the relationship between the reproductive potential of the stock, commonly approximated by the Spawning Stock Biomass (SSB) or Total Egg production (TEP), and the subsequent recruitment in numbers, i.e. the year class strengt. The stock-recruitment relationship is an essential element for assessing the resilience of a fish population, and forecasting the likely effect and time of responses to management measures.
 
 Although modern statistical catch-at-age assessment methods generally integrate the estimation of the parameters of this relationship together with all others, VPA-based models require fitting the stock-recruitment relationship based on the model estimates of abundance. Also, the relationship is employed in most forecasting algorithms, such as those offered by the `FLash` package.
 
@@ -28,27 +30,27 @@ library(ggplotFL)
 
 - name (`character`)
 - desc (`character`)
-- range
+- range (`numeric`)
 
-- rec
-- ssb
-- covar
+- rec (`FLQuant`)
+- ssb (`FLQuant`)
+- covar (`FLQuants`)
 
-- fitted
-- residuals
+- fitted (`FLQuant`)
+- residuals (`FLQuant`)
 
-- model
-- lkhd
-- gr
-- initial
-- logerror
-- distribution
+- model (`formula`)
+- lkhd (`function`)
+- gr (`function`)
+- initial (`function`)
+- logerror (`logical`)
+- distribution (`factor`)
 
-- params
-- logLik
-- vcov
-- hessian
-- details
+- params (`FLPar`)
+- logLik (`logLik`)
+- vcov (`array`)
+- hessian (`array`)
+- details (`list`)
 
 
 ```{r data}
@@ -57,17 +59,53 @@ data(nsher)
 
 # Creating `FLSR` objects
 
-The class has a creator method of the same name. The `FLSR()` method will take as inputs the objects to be assigned into the individual slots, for example
+The class has a creator method of the same name. The `FLSR()` method will take as inputs the objects to be assigned into the individual slots. For example, to create a new `FLSR` object with existing `FLQuant` object for the two time series, we assign them to their respective slots in the method call:
 
 ```{r create}
-rec <- FLQuant(20 + c(0, cumsum(sample(rnorm(30, 0, 2)))), quant="age")
-ssb <- FLQuant(100 + rnorm(31, 0, 12), quant="age")
+ssb <- FLQuant(100 + rnorm(31, 0, 12), quant="age",
+	dimnames=list(year=1900:1930), units="t")
+rec <- FLQuant(20 + c(0, cumsum(sample(rnorm(30, 0, 2)))),
+	dimnames=list(year=1901:1931, age="1"), units="1000")
 
 exs <- FLSR(rec=rec, ssb=ssb, name="randFLSR")
-								 
 ```
 
+Please note how the lag between spawning and recruitment is reflected in the `dimnames` of the two `FLQuant` slots: year dimnames for `ssb` go from 1900 to 1930 while the `rec` series starts in 1901 until 1931. Age at recruitment is 1 in this case, as reflected by the `rec` dimnames for the first dimension:
+
+```{r reclag}
+# CHECK recruitment lag as age dimension name
+dimnames(rec(exs))$age
+```
+
+Although many methods won't use this information, and will simply assume you have placed both time series in the object with the correct lag, it is useful to label the object dimensions correctly to display results, and to later recall the precise structure of the data.
+
 ## Specifying the stock-recruitment model
+
+The call to the `FLSR()` creator allows specifying the stock-recruitment model to be used. As explained above, two slots contain the information necessary for fitting through maximum likelihood, `model` and `lkhd`, while a third, `initial`, simplifies the call to the optimizer by generating initial values based on the input data, but they can also be provided in the call to the minimization routine.
+
+`FLCore` already contains a number of commonly-used stock-recruitment relationships in various formulations (see a full list below at [Stock-recruitment models](#srmodels)). For each of them, a function has been defined that returns a list containing those three elements, for example
+
+```{r bevholt}
+# INSPECT bevholt function
+bevholt()
+```
+
+and the `model<-` assigment method, which usually would only modify the content of the `model` slot, a formula, can also place those three elements in the right slots, giving us the necessary elements for fitting the chosen model.
+
+```{r modelc}
+# REPLACE model (plus logl and initial)
+model(nsher) <- bevholt()
+```
+
+Modifying the model in an object will also modify other slots. Those that keep results (`fitted`, `residuals`, `params`, `vcov`, `hessian`, ...) will have their structure adapted to the parameter set defined by the new model and their contents turn into `NA`s.
+
+```{r modelc}
+# INSPECT object after model change
+summary(nsher)
+
+params(nsher)
+```
+
 
 ## Converting from 	other classes
 
@@ -83,21 +121,26 @@ data(ple4)
 psr4 <- as.FLSR(ple4)
 
 summary(psr4)
-
 ```
 
-and which will use the `FLQuant` objects extracted by calling the `rec` and `ssb` methods on the input object to fill the slots with those names. Other `FLQuant` slots are then sized as required.
+which will use the `FLQuant` objects extracted by calling the `rec` and `ssb` methods on the input object to fill those slots. Other `FLQuant` slots are then sized as required. Note that `rec(FLStock)` will return by default the abundances at the first available age.
 
-```{r converts}
-summary(psr4)
-
-```
-
+The selected model can also be specified at the convertion stage, or later added and modified using the `model<-` method
 
 ```{r convertm}
 # ASSIGN model
+psr4 <- as.FLSR(ple4, model=ricker)
+
 model(psr4) <- ricker
 ```
+
+## <a name="srmodels"></a>Stock-recruitment models
+
+- Beverton & Holt (`bevholt()`)
+- Ricker (`ricker()`)
+- Segmented regression (`segres()`)
+- Cushing (`cushing()`)
+- Shepherd (`shepherd()`)
 
 # Model fitting
 
@@ -107,17 +150,6 @@ model(psr4) <- ricker
 
 ## Using covariates
 
-# Stock-recruitment models
-
-### Beverton & Holt (`bevholt`)
-
-### Ricker (`ricker`)
-
-### Segmented regression (`segres`)
-
-### Cushing (`cushing`)
-
-### Shepherd (`shepherd`)
 
 # Assessing the fit
 
@@ -136,8 +168,14 @@ profile(nsher)
 
 # Adding other SR models
 
-# Further information and References
+# Further Reading
 
-```{r help}
-help("SRmodels")
-```
+# References
+
+Beverton, R.J.H. and Holt, S.J. (1957) On the dynamics of exploited fish populations. MAFF Fish. Invest., Ser: II 19, 533.
+
+Needle, C.L. Recruitment models: diagnosis and prognosis.  Reviews in Fish Biology and Fisheries 11: 95-111, 2002.
+
+Ricker, W.E. (1954) Stock and recruitment. J. Fish. Res. Bd Can. 11, 559-623.
+
+Shepherd, J.G. (1982) A versatile new stock-recruitment relationship for fisheries and the construction of sustainable yield curves.  J. Cons. Int. Explor. Mer 40, 67-75.
