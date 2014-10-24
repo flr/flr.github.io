@@ -9,8 +9,6 @@ learning: modelling
 rights:  Creative Commons Share Alike 4.0
 ---
 
-The stock and recruitment problem may be considered as the search for the relationship between parental stock size 
-
 A fundamental problem in the quantitative assessment of fisheries is the relationship between the reproductive potential of the stock, commonly approximated by the Spawning Stock Biomass (SSB) or Total Egg production (TEP), and the subsequent recruitment in numbers, i.e. the year class strengt. The stock-recruitment relationship is an essential element for assessing the resilience of a fish population, and forecasting the likely effect and time of responses to management measures.
 
 Although modern statistical catch-at-age assessment methods generally integrate the estimation of the parameters of this relationship together with all others, VPA-based models require fitting the stock-recruitment relationship based on the model estimates of abundance. Also, the relationship is employed in most forecasting algorithms, such as those offered by the `FLash` package.
@@ -142,11 +140,11 @@ bevholt()
 ## $logl
 ## function (a, b, rec, ssb) 
 ## loglAR1(log(rec), log(a * ssb/(b + ssb)))
-## <environment: 0x577a368>
+## <environment: 0x5e20dc8>
 ## 
 ## $model
 ## rec ~ a * ssb/(b + ssb)
-## <environment: 0x577a368>
+## <environment: 0x5e20dc8>
 ## 
 ## $initial
 ## function (rec, ssb) 
@@ -155,7 +153,7 @@ bevholt()
 ##     b <- max(quantile(c(rec)/c(ssb), 0.9, na.rm = TRUE))
 ##     return(FLPar(a = a, b = a/b))
 ## }
-## <environment: 0x577a368>
+## <environment: 0x5e20dc8>
 ## attr(,"lower")
 ## [1] -Inf -Inf
 ## attr(,"upper")
@@ -195,7 +193,7 @@ summary(nsher)
 ## fitted        : [ 1 45 1 1 1 1 ], units =  10^3 
 ## 
 ## Model: 	rec ~ a * ssb/(b + ssb)
-## <environment: 0x5b31610>
+## <environment: 0x61ddbd8>
 ## Parameters: 
 ##     params
 ## iter  a  b
@@ -259,7 +257,7 @@ summary(psr4)
 ## fitted        : [ 1 51 1 1 1 1 ], units =  10^3 
 ## 
 ## Model: 	list()
-## <environment: 0x459d1f8>
+## <environment: 0x4c4d120>
 ## Parameters: 
 ## 
 ##    1
