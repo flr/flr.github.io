@@ -166,7 +166,7 @@ summary(nsher)
 ## fitted        : [ 1 45 1 1 1 1 ], units =  10^3 
 ## 
 ## Model: 	rec ~ a * ssb/(b + ssb)
-## <environment: 0x525de30>
+## <environment: 0x596ce30>
 ## Parameters: 
 ##     params
 ## iter  a  b
@@ -230,7 +230,7 @@ summary(psr4)
 ## fitted        : [ 1 51 1 1 1 1 ], units =  10^3 
 ## 
 ## Model: 	list()
-## <environment: 0x46758e0>
+## <environment: 0x4d848e0>
 ## Parameters: 
 ## 
 ##    1
