@@ -81,17 +81,16 @@ Although many methods won't use this information, and will simply assume you hav
 
 The call to the `FLSR()` creator allows specifying the stock-recruitment model to be used. As explained above, two slots contain the information necessary for fitting through maximum likelihood, `model` and `lkhd`, while a third, `initial`, simplifies the call to the optimizer by generating initial values based on the input data, but they can also be provided in the call to the minimization routine.
 
-`FLCore` already contains a number of commonly-used stock-recruitment relationships in various formulations (see a full list below at [Stock-recruitment models](#srmodels)). For each of them, a function has been defined that returns a list containing those three elements, for example
+`FLCore` already contains a number of commonly-used stock-recruitment relationships in various formulations (see a full list [below](#srmodels)). For each of them, a function has been defined that returns a list containing those three elements, for example
 
 ```{r bevholt}
 # INSPECT bevholt function
-bevholt()
+#bevholt()
 ```
 
 and the `model<-` assigment method, which usually would only modify the content of the `model` slot, a formula, can also place those three elements in the right slots, giving us the necessary elements for fitting the chosen model.
 
 ```{r modelc}
-# REPLACE model (plus logl and initial)
 model(nsher) <- bevholt()
 ```
 
@@ -144,10 +143,13 @@ model(psr4) <- ricker
 
 ## Maximum likelihood estimation with `fmle`
 
+
+```{r fmle}
+nsher <- fmle(nsher)
+```
 ## Fixing parameters
 
 ## Using covariates
-
 
 # Assessing the fit
 

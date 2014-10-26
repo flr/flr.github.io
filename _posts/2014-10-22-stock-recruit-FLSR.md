@@ -126,45 +126,18 @@ Although many methods won't use this information, and will simply assume you hav
 
 The call to the `FLSR()` creator allows specifying the stock-recruitment model to be used. As explained above, two slots contain the information necessary for fitting through maximum likelihood, `model` and `lkhd`, while a third, `initial`, simplifies the call to the optimizer by generating initial values based on the input data, but they can also be provided in the call to the minimization routine.
 
-`FLCore` already contains a number of commonly-used stock-recruitment relationships in various formulations (see a full list below at [Stock-recruitment models](#srmodels)). For each of them, a function has been defined that returns a list containing those three elements, for example
+`FLCore` already contains a number of commonly-used stock-recruitment relationships in various formulations (see a full list [below](#srmodels)). For each of them, a function has been defined that returns a list containing those three elements, for example
 
 
 {% highlight r %}
 # INSPECT bevholt function
-bevholt()
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## $logl
-## function (a, b, rec, ssb) 
-## loglAR1(log(rec), log(a * ssb/(b + ssb)))
-## <environment: 0x5e20dc8>
-## 
-## $model
-## rec ~ a * ssb/(b + ssb)
-## <environment: 0x5e20dc8>
-## 
-## $initial
-## function (rec, ssb) 
-## {
-##     a <- max(quantile(c(rec), 0.75, na.rm = TRUE))
-##     b <- max(quantile(c(rec)/c(ssb), 0.9, na.rm = TRUE))
-##     return(FLPar(a = a, b = a/b))
-## }
-## <environment: 0x5e20dc8>
-## attr(,"lower")
-## [1] -Inf -Inf
-## attr(,"upper")
-## [1] Inf Inf
+#bevholt()
 {% endhighlight %}
 
 and the `model<-` assigment method, which usually would only modify the content of the `model` slot, a formula, can also place those three elements in the right slots, giving us the necessary elements for fitting the chosen model.
 
 
 {% highlight r %}
-# REPLACE model (plus logl and initial)
 model(nsher) <- bevholt()
 {% endhighlight %}
 
@@ -193,7 +166,7 @@ summary(nsher)
 ## fitted        : [ 1 45 1 1 1 1 ], units =  10^3 
 ## 
 ## Model: 	rec ~ a * ssb/(b + ssb)
-## <environment: 0x61ddbd8>
+## <environment: 0x525de30>
 ## Parameters: 
 ##     params
 ## iter  a  b
@@ -257,7 +230,7 @@ summary(psr4)
 ## fitted        : [ 1 51 1 1 1 1 ], units =  10^3 
 ## 
 ## Model: 	list()
-## <environment: 0x4c4d120>
+## <environment: 0x46758e0>
 ## Parameters: 
 ## 
 ##    1
@@ -290,10 +263,57 @@ model(psr4) <- ricker
 
 ## Maximum likelihood estimation with `fmle`
 
+
+
+{% highlight r %}
+nsher <- fmle(nsher)
+{% endhighlight %}
+
+
+
+{% highlight text %}
+##   Nelder-Mead direct search function minimizer
+## function value for initial parameters = -10.336211
+##   Scaled convergence tolerance is 1.54022e-07
+## Stepsize computed as 501.110000
+## BUILD              3 44.842344 -11.603908
+## HI-REDUCTION       5 31.685209 -11.603908
+## HI-REDUCTION       7 17.913114 -11.603908
+## HI-REDUCTION       9 5.415279 -11.603908
+## HI-REDUCTION      11 -3.412974 -11.603908
+## HI-REDUCTION      13 -8.018030 -11.603908
+## LO-REDUCTION      15 -10.336211 -11.603908
+## LO-REDUCTION      17 -11.081040 -11.603908
+## EXTENSION         19 -11.295930 -12.061705
+## LO-REDUCTION      21 -11.603908 -12.061705
+## REFLECTION        23 -11.813826 -12.087620
+## REFLECTION        25 -12.061705 -12.199591
+## LO-REDUCTION      27 -12.087620 -12.199591
+## LO-REDUCTION      29 -12.158184 -12.199591
+## LO-REDUCTION      31 -12.191726 -12.199591
+## HI-REDUCTION      33 -12.192269 -12.199591
+## HI-REDUCTION      35 -12.197784 -12.199591
+## LO-REDUCTION      37 -12.198015 -12.199591
+## HI-REDUCTION      39 -12.199555 -12.199776
+## REFLECTION        41 -12.199591 -12.200058
+## HI-REDUCTION      43 -12.199776 -12.200092
+## HI-REDUCTION      45 -12.200058 -12.200142
+## HI-REDUCTION      47 -12.200092 -12.200155
+## HI-REDUCTION      49 -12.200142 -12.200160
+## HI-REDUCTION      51 -12.200155 -12.200177
+## HI-REDUCTION      53 -12.200160 -12.200177
+## LO-REDUCTION      55 -12.200171 -12.200179
+## HI-REDUCTION      57 -12.200177 -12.200179
+## HI-REDUCTION      59 -12.200178 -12.200179
+## HI-REDUCTION      61 -12.200179 -12.200179
+## HI-REDUCTION      63 -12.200179 -12.200179
+## HI-REDUCTION      65 -12.200179 -12.200179
+## Exiting from Nelder Mead minimizer
+##     67 function evaluations used
+{% endhighlight %}
 ## Fixing parameters
 
 ## Using covariates
-
 
 # Assessing the fit
 
@@ -305,7 +325,7 @@ logLik(nsher)
 
 
 {% highlight text %}
-## 'log Lik.' NA (df=2)
+## 'log Lik.' 12.20018 (df=2)
 {% endhighlight %}
 
 
@@ -317,7 +337,7 @@ AIC(nsher)
 
 
 {% highlight text %}
-## [1] NA
+## [1] -20.40036
 {% endhighlight %}
 
 
@@ -329,10 +349,28 @@ BIC(nsher)
 
 
 {% highlight text %}
-## [1] NA
+## [1] -16.78703
 {% endhighlight %}
 
 ## Likelihood profiling
 
 
+{% highlight r %}
+profile(nsher)
+{% endhighlight %}
 
+![plot of chunk profplot](http://flr-project.org/assets/2014-10-22-stock-recruit-FLSR/figures/profplot-1.png) 
+
+# Adding other SR models
+
+# Further Reading
+
+# References
+
+Beverton, R.J.H. and Holt, S.J. (1957) On the dynamics of exploited fish populations. MAFF Fish. Invest., Ser: II 19, 533.
+
+Needle, C.L. Recruitment models: diagnosis and prognosis.  Reviews in Fish Biology and Fisheries 11: 95-111, 2002.
+
+Ricker, W.E. (1954) Stock and recruitment. J. Fish. Res. Bd Can. 11, 559-623.
+
+Shepherd, J.G. (1982) A versatile new stock-recruitment relationship for fisheries and the construction of sustainable yield curves.  J. Cons. Int. Explor. Mer 40, 67-75.
