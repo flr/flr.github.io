@@ -1,3 +1,4 @@
+*04/NOV/2014* - NEW versions of FLCore and FLash for R 3.1
 *12/SEP/2014* - **instFLR.R** script now deals with FLR-CRAN package dependencies.
 *21/JUN/2014* - ADDED a **NEWS** section to FLR frontpage.
 *15/JUN/2014* - FLR **packages** for R 3.1 are now available at the [FLR repository](http://www.flr-project.org/R/).
