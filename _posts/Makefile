@@ -6,8 +6,7 @@ DATE := `date +%Y-%m-%d`
 
 NAME := $(DATE)-$(CTITLE)
 
-all:
+new:
 	cp -r _example-post _$(NAME)
 	mv _$(NAME)/example-post.Rmd _$(NAME)/$(NAME).Rmd
 	mkdir ../assets/$(NAME)
-new: all
