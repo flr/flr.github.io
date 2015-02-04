@@ -5,5 +5,5 @@ gems:
   - jekyll-sitemap
 encoding: UTF-8
 url: http://flr-project.org
-permalink: /:categories/:title.html
+permalink: /:category/:title.html
 ignore: [README.md Makefile]
