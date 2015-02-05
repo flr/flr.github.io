@@ -27,10 +27,9 @@ library(FLCore)
 
 
 {% highlight text %}
-## Loading required package: grid
 ## Loading required package: lattice
 ## Loading required package: MASS
-## FLCore (Version 2.5.20141011, packaged: 2014-10-24 11:32:38 UTC)
+## FLCore (Version 2.5.20150129, packaged: 2015-02-03 12:34:57 UTC)
 ## 
 ## Attaching package: 'FLCore'
 ## 
@@ -57,6 +56,7 @@ library(ggplotFL)
 ##     %+%
 ## 
 ## Loading required package: gridExtra
+## Loading required package: grid
 ## Loading required package: reshape2
 {% endhighlight %}
 
@@ -154,10 +154,10 @@ summary(nsher)
 {% highlight text %}
 ## An object of class "FLSR"
 ## 
-## Name: Autumn spawning herring in IV, V  3/4/2005 14:46 
-## Description: 'rec' and 'ssb' slots obtained from a 'FLStock' object 
-## Range:	  
-## 		
+## Name:  
+## Description:  
+## Range:	 min	minyear	max	maxyear 
+## 	0	1960	0	2004	
 ## Quant: age 
 ## 
 ## rec           : [ 1 45 1 1 1 1 ], units =  10^3 
@@ -166,7 +166,7 @@ summary(nsher)
 ## fitted        : [ 1 45 1 1 1 1 ], units =  10^3 
 ## 
 ## Model: 	rec ~ a * ssb/(b + ssb)
-## <environment: 0x596ce30>
+## <environment: 0x5dd62a0>
 ## Parameters: 
 ##     params
 ## iter  a  b
@@ -230,9 +230,10 @@ summary(psr4)
 ## fitted        : [ 1 51 1 1 1 1 ], units =  10^3 
 ## 
 ## Model: 	list()
-## <environment: 0x4d848e0>
+## <environment: 0x563df20>
 ## Parameters: 
-## 
+##     params
+## iter
 ##    1
 ## 
 ## Log-likelihood:  NA(NA) 
