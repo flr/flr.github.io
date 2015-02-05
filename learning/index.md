@@ -3,8 +3,6 @@ layout: page
 title: Learning FLR
 ---
 
-{{ site.time }}
-
 <ul>
 	{% for cat in site.categories %}
     <h1>{{ cat[0] | capitalize }}</h1>
