@@ -10,7 +10,7 @@
     {% if page.sections contains 'learning' %}
     {% if post.categories contains {{ cat[0] }} %}
     	<li>
-	      <a href="{{ post.url }}">{{ post.title }}</a>
+	      <a href="{{ post.url }}">{{ page.sections }} - {{ post.title }}</a>
     	</li>
     {% endif %}
     {% endif %}
