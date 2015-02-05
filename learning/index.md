@@ -22,6 +22,8 @@
 </ul>
 
 
+{{ site.time }}
+
 <ul>
 	{% for section in page.sections %}
     <h1>{{ section[0] | capitalize }}</h1>
@@ -34,6 +36,4 @@
   {% endfor %}
 	{% endfor %}
 </ul>
-
-
 
