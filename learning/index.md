@@ -9,6 +9,7 @@
   {% for post in site.posts %}
     {% if post.categories contains {{ cat[0] }} %}
     	<li>
+			RTEST
 	      <a href="{{ post.url }}">{{ page.sections }} - {{ post.title }}</a>
     	</li>
     {% endif %}
