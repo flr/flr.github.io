@@ -5,7 +5,7 @@ date: October 2014
 layout: post
 tags: [FLSR FLCore]
 section: [learning]
-categories: ["Stock Assessment"]
+categories: ["stock assessment"]
 rights:  Creative Commons Share Alike 4.0
 ---
 

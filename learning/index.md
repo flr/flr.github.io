@@ -12,7 +12,7 @@
 		{% if post.section contains 'learning' %}
 			{% if post.categories[0] == cat[0] %}
     	<li>
-	      {{ post.categories }} - {{ cat[0] }} <a href="{{ post.url }}">{{ post.title }}</a>
+	      <a href="{{ post.url }}">{{ post.title }}</a>
     	</li>
 		{% endif %}
 		{% endif %}
