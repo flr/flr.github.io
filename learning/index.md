@@ -3,6 +3,8 @@
   title: Learning FLR
 ---
 
+{{ site.time }}
+
 <ul>
 	{% for cat in site.categories %}
     <h3>{{ cat[0] | word.capitalize }}</h3>
