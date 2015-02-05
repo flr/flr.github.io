@@ -5,6 +5,8 @@
 
 {{ site.time }}
 
+
+
 <ul>
 	{% for cat in site.categories %}
     <h3>{{ cat }}</h3>
