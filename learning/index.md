@@ -6,11 +6,11 @@
 {{ site.time }}
 
 <ul>
-	{% for category in site.categories %}
-    <h3>{{ category }}</h3>
+	{% for cat in site.categories %}
+    <h3>{{ cat }}</h3>
   {% for post in site.posts %}
 		{% if post.section contains 'learning' %}
-		{% if post.categories == {{ category }} %}
+		{% if post.categories == {{ cat }} %}
     	<li>
 	      <a href="{{ post.url }}">{{ post.title }}</a>
     	</li>
