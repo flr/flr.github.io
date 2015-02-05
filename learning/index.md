@@ -7,7 +7,7 @@
 
 <ul>
 	{% for cat in site.categories %}
-    <h2>{{ cat[0] }}</h2>
+    <h1>{{ cat[0] | capitalize }}</h1>
   {% for post in site.posts %}
 		{% if post.section contains 'learning' %}
 			{% if post.categories[0] == cat[0] %}
