@@ -11,7 +11,7 @@
   {% for post in site.posts %}
 		{% if post.section contains 'learning' %}
     	<li>
-	      <a href="{{ post.url }}">{{ post.title }}</a>
+	      {{ post.categories }} - {{ cat[0] }} <a href="{{ post.url }}">{{ post.title }}</a>
     	</li>
 		{% endif %}
   {% endfor %}
