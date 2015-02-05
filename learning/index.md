@@ -25,10 +25,10 @@
 {{ site.time }}
 
 <ul>
-	{% for section in page.sections %}
+	{% for section in [introduction 'stock assessment'] %}
     <h1>{{ section[0] | capitalize }}</h1>
 		{% for post in site.categories.learning %}
-			{% if post.categories[0] == section[0] %}
+			{% if post.section[0] == section[0] %}
     	<li>
 	      <a href="{{ post.url }}">{{ post.title }}</a>
     	</li>
