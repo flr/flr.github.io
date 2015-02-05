@@ -4,7 +4,7 @@ title: A Quick Introduction to FLR
 date: 2014-05-22 14:32:00 GMT+1
 tags: [flcore introduction flquant flstock ple4]
 categories: [introduction]
-sections: [learning]
+	sections: [learning]
 ---
 
 # FLR in a nutshell
