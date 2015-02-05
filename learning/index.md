@@ -13,6 +13,7 @@
 	      <a href="{{ post.url }}">{{ post.title }}</a>
     	</li>
     {% endif %}
+    {% endif %}
   {% endfor %}
 	{% endfor %}
 </ul>
