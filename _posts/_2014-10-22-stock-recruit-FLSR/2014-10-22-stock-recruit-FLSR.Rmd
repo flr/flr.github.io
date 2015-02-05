@@ -19,7 +19,7 @@ We will now look at how objects of this class can be created, how to fit stock-r
 
 # The FLSR class
 
-```{r pkgs}
+```{r, pkgs, echo=TRUE, results='hide', message=FALSE}
 library(FLCore)
 library(ggplotFL)
 ```

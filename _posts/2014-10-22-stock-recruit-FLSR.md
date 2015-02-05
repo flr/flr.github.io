@@ -22,42 +22,7 @@ We will now look at how objects of this class can be created, how to fit stock-r
 
 {% highlight r %}
 library(FLCore)
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Loading required package: lattice
-## Loading required package: MASS
-## FLCore (Version 2.5.20150129, packaged: 2015-02-03 12:34:57 UTC)
-## 
-## Attaching package: 'FLCore'
-## 
-## The following objects are masked from 'package:base':
-## 
-##     cbind, rbind
-{% endhighlight %}
-
-
-
-{% highlight r %}
 library(ggplotFL)
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Loading required package: ggplot2
-## 
-## Attaching package: 'ggplot2'
-## 
-## The following object is masked from 'package:FLCore':
-## 
-##     %+%
-## 
-## Loading required package: gridExtra
-## Loading required package: grid
-## Loading required package: reshape2
 {% endhighlight %}
 
 ## Class structure
@@ -166,7 +131,7 @@ summary(nsher)
 ## fitted        : [ 1 45 1 1 1 1 ], units =  10^3 
 ## 
 ## Model: 	rec ~ a * ssb/(b + ssb)
-## <environment: 0x5dd62a0>
+## <environment: 0x5109920>
 ## Parameters: 
 ##     params
 ## iter  a  b
@@ -230,7 +195,7 @@ summary(psr4)
 ## fitted        : [ 1 51 1 1 1 1 ], units =  10^3 
 ## 
 ## Model: 	list()
-## <environment: 0x563df20>
+## <environment: 0x42b85b8>
 ## Parameters: 
 ##     params
 ## iter
