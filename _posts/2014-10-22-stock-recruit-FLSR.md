@@ -4,7 +4,7 @@ post_author: Iago Mosqueira
 date: October 2014
 layout: post
 tags: [FLSR FLCore]
-section: [course]
+section: [learning]
 categories: ["Stock Assessment"]
 rights:  Creative Commons Share Alike 4.0
 ---
