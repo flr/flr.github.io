@@ -7,6 +7,7 @@
 
 <ul>
 	{% for cat in site.categories %}
+<ul>
     <h2>{{ cat[0] }}</h2>
   {% for post in site.posts %}
 		{% if post.section contains 'learning' %}
@@ -15,6 +16,7 @@
     	</li>
 		{% endif %}
   {% endfor %}
+</ul>
 	{% endfor %}
 </ul>
 
