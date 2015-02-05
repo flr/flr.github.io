@@ -9,7 +9,7 @@
   {% for post in site.posts %}
     	<li>
 			RTEST
-	      <a href="{{ post.url }}">{{ page.sections }} - {{ post.title }}</a>
+	      <a href="{{ post.url }}">{{ page.section }} - {{ post.title }}</a>
     	</li>
   {% endfor %}
 	{% endfor %}
