@@ -1,9 +1,0 @@
-markdown: kramdown
-comments:
-  provider: false
-gems:
-  - jekyll-sitemap
-encoding: UTF-8
-url: http://flr-project.org
-permalink: none
-ignore: [README.md Makefile]
