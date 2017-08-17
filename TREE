@@ -1,0 +1,45 @@
+.
+├── _config.yml
+├── css - FONTS CSS
+│   └── font-awesome
+│       ├── css
+│       └── fonts
+├── _data
+│   └── template.yml - COLORS, FONTS
+├── feed.xml
+├── img - IMAGES by section
+│   ├── about/
+│   ├── header-bg.jpg - HEADER background
+│   ├── logos/
+│   ├── mac-image.png - FOOTER background
+│   ├── portfolio/
+│   └── team/
+├── _includes - STATIC PAGES
+│   ├── about.html
+│   ├── clients.html
+│   ├── contact.html
+│   ├── css - CSS
+│   │   ├── agency.css
+│   │   └── bootstrap.min.css
+│   ├── footer.html
+│   ├── header.html
+│   ├── head.html
+│   ├── js.html
+│   ├── modals.html
+│   ├── packages.html
+│   ├── portfolio_grid.html
+│   └── team.html
+├── index.html
+├── js/
+├── _layouts
+│   ├── default.html - MAIN
+│   ├── feed.xml
+│   └── style.css
+├── LICENSE
+├── mail
+│   └── contact_me.php
+├── _plugins/
+├── _posts
+│   └── 2014-07-18-project-1.markdown
+├── README.md
+└── style.css
