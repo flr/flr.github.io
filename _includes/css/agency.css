@@ -676,7 +676,7 @@ aside.clients img {
     margin: 50px auto;
 }
 
-section#contact {
+section#community {
     background-color: #222;
     background-image: url('{{ site.baseurl }}/img/mac-image.png');
     background-position: center;
