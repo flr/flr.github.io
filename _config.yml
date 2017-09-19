@@ -44,6 +44,8 @@ people:
 social:
   - title: github
     url: http://github.com/flr
+  - title: twitter
+    url: http://twitter.com/flrproject
 
 # Postal address (add as many lines as necessary)
 address:
