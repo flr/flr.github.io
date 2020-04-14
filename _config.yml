@@ -1,4 +1,4 @@
-url: http://flr-project.org
+url: https://flr-project.org
 
 # Site settings
 title: FLR
@@ -49,8 +49,8 @@ social:
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
+  - line: WUR IJmuiden
+  - line: The Netherlands
 
 # Build settings
 markdown: kramdown
