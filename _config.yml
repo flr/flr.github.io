@@ -44,6 +44,8 @@ people:
 social:
   - title: github
     url: https://github.com/flr
+  - title: r-universe
+    url: https://flr.r-universe.dev
   - title: twitter
     url: https://twitter.com/flrproject
 
