@@ -4,20 +4,13 @@
     <div class="row">
       <div class="col-lg-12 text-center">
         <h2 class="section-heading">Installing FLR</h2>
-        <h3 class="section-content text-muted">To install the <a href="https://github.com/flr/R/releases/latest">latest released versions</a> of the <b>FLR</b> packages, and all their dependencies, start R and enter</h3>
+
+        <h3 class="section-content text-muted">To install the latest versions of any <b>FLR</b> package, and all the necessary dependencies, start R and enter</h3>
         <code class="language-r">
           source("http://flr-project.org/R/instFLR.R")
+          install.packages(repos=c(FLR="https://flr.r-universe.dev", CRAN="https://cloud.r-project.org"))
         </code>
-        <h3 class="section-content text-muted">or select your choice of packages from the <a href="https://github.com/flr/R">FLR repository</a> by calling</h3>
-        <code class="language-r">
-          install.packages(repos="http://flr-project.org/R")
-        </code>
-        <h3 class="section-content text-muted">To keep up with the latest development version, you can install from the <a href="https://flr.r-universe.dev">FLR R-Universe repository</a> by calling</h3>
-        <code class="language-r">
-          install.packages(repos="https://flr.r-universe.dev")
-        </code>
-
-
+        
         <h3 class="section-content text-muted">A good starting point to explore <b>FLR</b> is <a href="http://flr-project.org/doc/A_quick_introduction_to_FLR.html">A quick introduction to FLR</a></h3>
       </div>
     </div>
